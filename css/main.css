@@ -35,7 +35,7 @@ body {
 }
 
 body {
-  margin: 1.5rem auto;
+  margin: 1.7rem auto;
   font: 400 62.5% 'Roboto', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -63,7 +63,7 @@ a {
 
 .maxWidth {
   max-width: 100%; /* ou 90% */
-  /* margin: 1rem auto; */
+  margin: 1rem auto;
   /* padding: 0 1rem; */
   box-sizing: border-box;
 }
@@ -302,6 +302,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-left: 1rem;
+  margin-right: 1rem;
   /* margin: 2.5em auto; */
   background-color: #f6f6f6;
   text-align: center;
@@ -662,6 +663,20 @@ figure img {
 
   .col-md-6 {
     width: 50%;
+  }
+  .heroBanner_content{
+    margin: 1.5rem;
+    border-radius: 5px;
+    gap: 1.5rem;
+
+
+  }
+  .middleContent{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 2rem;
   }
 
   .mainContent_container_cursos {
