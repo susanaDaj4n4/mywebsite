@@ -1,0 +1,43 @@
+# Título do site
+title: 'Blog DaJoana | Cosmética Natural'
+
+# Email de contacto
+email: cosmeticanatural_formacao@dajoana.com
+
+# Descrição que aparece nos metadados e motores de busca
+description: >
+  Últimos artigos e novidades da cosmética natural.
+
+# Mantém vazio se usas domínio próprio como www.dajoana.com
+baseurl: ''
+
+# Domínio do site
+url: 'https://www.dajoana.com'
+
+# Tema Jekyll (podes personalizar depois)
+theme: minima
+
+# Plugins para feeds e SEO
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Processador Markdown
+markdown: kramdown
+
+# URLs mais limpas: www.dajoana.com/artigos/titulo-em-vez-de-html
+permalink: /:categories/:title/
+
+# Coleção personalizada chamada blog
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title/
+
+# Idioma (opcional, mas bom para SEO)
+lang: pt-PT
+# Favicon (se usares)
+# favicon: /assets/favicon.ico
+
+# Google Analytics (se quiseres usar no futuro)
+# google_analytics: UA-XXXXXXXXX-X
