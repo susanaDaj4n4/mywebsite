@@ -1,0 +1,15 @@
+title: DaJoana Cosmética Natural
+email: champosolido@gmail.com
+description: >
+  Blog e site sobre cosmética natural, ingredientes certificados e formulações conscientes.
+baseurl: '' # se estiveres a usar GitHub Pages com domínio próprio, mantém vazio
+url: 'https://teunome.github.io' # ou o teu domínio personalizado
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+permalink: /:categories/:title/
+collections:
+  blog:
+    output: true

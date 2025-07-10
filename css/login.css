@@ -180,6 +180,46 @@ main {
 .newsletter input.name:focus,
 .newsletter input.email:focus {
   outline: 2px solid var(--primary-color);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .newsletter button {
