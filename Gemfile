@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
-gem "jekyll"
+gem "jekyll", "~> 4.4.1"
+gem "minima", "~> 2.5"
