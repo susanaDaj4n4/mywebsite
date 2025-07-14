@@ -52,7 +52,6 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  color: var(--primary-text);
 }
 a {
   text-decoration: none;
@@ -731,6 +730,11 @@ figure img {
     padding: 2rem;
   }
 
+  .mainContent_container_cursos {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .mainContent_img,
   .mainContent_text {
     width: 100%;
@@ -746,34 +750,10 @@ figure img {
     width: auto;
     min-width: 200px;
   }
-
-  .mainContent_container_cursos {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .mainContent_article {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
-  .mainContent_list__cursos {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .mainContent_list__cursos li {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    padding-left: 1.5rem;
-  }
-
-  .mainContent_list__cursos ul {
-    list-style-type: square;
-    padding-left: 2rem;
-  }
-
   .testimonials {
     min-height: 100vh; /* ocupa toda a altura da tela */
     display: flex;
@@ -835,18 +815,6 @@ figure img {
   .header-nav {
     margin-top: 1.75rem;
     display: flex !important;
-    overflow-x: auto; /* ou visible */
-    width: 100%;
-    flex: 1;
-  }
-  .header__navList {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: visible;
-    width: 100%;
-    gap: 1rem; /* para espaçamento entre itens */
   }
 
   .header-nav ul {
@@ -984,7 +952,7 @@ figure img {
 
   .mainContent_title {
     text-transform: uppercase;
-    color: var(--primary-text);
+    color: var(--primary-color);
     font-size: 1.25em;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -1079,7 +1047,7 @@ figure img {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem; /* espaçamento entre links */
+    gap: 1rem; /* espaçamento entre links */
   }
 
   .header-nav ul li a {
@@ -1090,6 +1058,10 @@ figure img {
 
   .hamburguerMenu-closed {
     display: none;
+  }
+  .header__navList {
+    max-width: 60vw; /* limita a largura total da ul */
+    justify-content: flex-start; /* alinha à esquerda se precisar */
   }
 
   .heroBanner {
@@ -1272,6 +1244,7 @@ figure img {
   display: grid;
   gap: 2em;
   padding: 2em;
+  text-align: center;
 }
 .mainContent_container_cursos {
   display: flex;
@@ -1280,6 +1253,24 @@ figure img {
   gap: var(--default-gap);
   margin-top: 0.6rem;
   flex-wrap: wrap;
+}
+
+.mainContent_img_cursos {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1; /* cria uma caixa quadrada */
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px; /* Adicionar para melhor comportamento responsivo dentro do flexbox */
+}
+
+.mainContent_img_cursos img {
+  height: 100%;
+  object-fit: cover; /* recorta sem distorcer */
+  object-position: center;
+  display: block;
+  border-radius: 6px;
 }
 
 .mainContent_text_cursos {
