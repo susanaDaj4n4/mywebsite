@@ -1016,11 +1016,9 @@ figure img {
 @media screen and (min-width: 90em) {
   .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    padding: 0 2rem; /* margem interna para dar espaço */
-    flex-wrap: nowrap;
+    margin: 0;
   }
 
   /* Mostrar o logo no desktop */
@@ -1042,8 +1040,6 @@ figure img {
   /* Navegação em linha */
   .header-nav {
     margin: 0;
-    flex-grow: 1;
-    overflow: hidden; /* evita ultrapassar */
   }
 
   .header-nav ul {
@@ -1064,18 +1060,8 @@ figure img {
     display: none;
   }
   .header__navList {
-    font-size: 0.95rem;
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 100vw; /* Limita largura para que não ultrapasse a zona útil */
-    white-space: nowrap;
-    overflow-x: auto; /* se for muito largo, permite scroll horizontal em último caso */
+    max-width: 60vw; /* limita a largura total da ul */
+    justify-content: flex-start; /* alinha à esquerda se precisar */
   }
 
   .heroBanner {

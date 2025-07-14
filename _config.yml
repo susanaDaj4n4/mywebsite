@@ -9,7 +9,7 @@ description: >
   Últimos artigos e novidades da cosmética natural.
 
 # Mantém vazio se usas domínio próprio como www.dajoana.com
-baseurl: '/blog'
+baseurl:
 
 # Domínio do site
 url: 'https://www.dajoana.com'
