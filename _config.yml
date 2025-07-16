@@ -6,7 +6,7 @@ email: cosmeticanatural_formacao@dajoana.com
 
 # Descrição que aparece nos metadados e motores de busca
 description: >
-  Últimos artigos e novidades da cosmética natural.
+  "Explore artigos e tendências em cosmética natural, com dicas práticas, receitas caseiras e soluções ecológicas para cuidar da sua pele todos os dias.""
 
 # Mantém vazio se usas domínio próprio como www.dajoana.com
 baseurl:
@@ -15,7 +15,6 @@ baseurl:
 url: 'https://www.dajoana.com'
 
 # Tema Jekyll (podes personalizar depois)
-theme: minima
 
 # Plugins para feeds e SEO
 plugins:
