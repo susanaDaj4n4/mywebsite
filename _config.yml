@@ -3,7 +3,7 @@ email: cosmeticanatural_formacao@dajoana.com
 description: >
   Explore artigos e tendências em cosmética natural, com dicas práticas, receitas caseiras e soluções ecológicas para cuidar da sua pele todos os dias.
 
-baseurl: '' # Importante para GitHub Pages
+baseurl: '' # importante se usares GitHub Pages
 url: 'https://www.dajoana.com'
 
 plugins:
@@ -13,17 +13,11 @@ plugins:
 markdown: kramdown
 permalink: /:categories/:title/
 
-collections:
-  blog:
-    output: true
-    permalink: /blog/:title/
-
 defaults:
   - scope:
-      path: '' # Aplica-se a todo o site
+      path: '' # Aplica a todo o site
       type: 'posts'
     values:
       layout: 'post'
       author: 'Susana Soares da Silva'
-      category: jekyll
       lang: 'pt-PT'

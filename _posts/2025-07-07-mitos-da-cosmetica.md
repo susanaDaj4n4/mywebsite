@@ -3,6 +3,7 @@ layout: post
 title: 'Mitos na Cosmética: O que diz a Ciência (E o que dizem por aí)'
 date: 2025-07-05
 categories: blog
+image: /assets/
 tags:
   [
     cosmética natural,
