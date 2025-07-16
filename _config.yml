@@ -33,8 +33,26 @@ collections:
     output: true
     permalink: /blog/:title/
 
-# Idioma (opcional, mas bom para SEO)
-lang: pt-PT
+defaults:
+  - scope:
+      path: '' # Aplica-se a todo o site
+      type: 'posts' # Apenas aos posts
+    values:
+      layout: 'post'
+      author: 'Susana Soares Silva'
+      permalink: /blog/:title/
+      lang: 'pt-PT'
+
+  - scope:
+      path: '' # Aplica-se a todas as páginas
+      type: 'posts'
+    values:
+      layout: 'post'
+      author: "Susana Soares da Silva"
+      category: jekyll
+      lang: 'pt-PT'
+
+
 # Favicon (se usares)
 # favicon: /assets/favicon.ico
 
