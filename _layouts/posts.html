@@ -1,7 +1,25 @@
 ---
-layout: post
-title: 'Título do Post'
-date: 2025-05-17
-author: Susana Soares da Silva
-description: 'Descrição para SEO (opcional)'
+layout: default
 ---
+
+<article class="post">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>
+      <small>{{ page.date | date: "%d de %B de %Y" }} | Por {{ page.author }}</small>
+    </p>
+  </header>
+
+  {% if page.description %}
+    <p><em>{{ page.description }}</em></p>
+  {% endif %}
+
+  {% if page.image %}
+    <img src="{{ page.image }}" alt="Imagem de destaque" class="post-featured-image" />
+  {% endif %}
+
+  <section class="post-content">
+    {{ content }}
+  </section>
+</article>
+
