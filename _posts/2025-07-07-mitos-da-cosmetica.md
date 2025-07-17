@@ -17,7 +17,7 @@ author: Susana Soares Silva
 description: 'Descobre porque alguns ingredientes cosméticos são seguros apesar dos mitos. A ciência e a legislação europeia explicam.'
 ---
 
-![Mitos da Cosmética](/assets/images/mitos-da-cosmetica.jpg)
+![Mitos da Cosmética](/assets/imagens/mitos-da-cosmetica.jpg)
 
 Vivemos numa era de grande acesso à informação… e à desinformação.  
 Na área da cosmética, multiplicam-se os posts alarmistas, listas de ingredientes “tóxicos” e vídeos virais a alertar para “substâncias escondidas”. Mas o que é verdade? O que é mito? E quem decide o que é seguro?
