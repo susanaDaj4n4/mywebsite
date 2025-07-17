@@ -789,7 +789,7 @@ figure img {
     display: block;
   }
 
-  .header {
+  .header-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1014,16 +1014,19 @@ figure img {
 }
 
 @media screen and (min-width: 90em) {
-  .header .container {
+  /* .header .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-  }
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 2rem;
+  } */
 
   /* Mostrar o logo no desktop */
   .logo-icon__logo.sm-hide.md-show {
-    display: block !important;
+    display: flex;
+    align-items: center;
     min-width: 200px; /* largura mínima do container do logo */
     min-height: 100px; /* altura mínima do container do logo */
     margin-right: 2rem; /* espaço entre logo e menu */
@@ -1047,12 +1050,11 @@ figure img {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem; /* espaçamento entre links */
+    gap: 0.5rem; /* espaçamento entre links */
   }
 
   .header-nav ul li a {
     text-decoration: none;
-    color: inherit;
     color: var(--special-color);
   }
 
@@ -1353,97 +1355,4 @@ figure img {
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
-}
-
-/* ==== ESTILOS PARA POSTS DE BLOG ==== */
-
-.post {
-  max-width: 750px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75;
-  color: #333;
-}
-
-.post h1,
-.post h2,
-.post h3 {
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-.post h1 {
-  font-size: 2rem;
-}
-
-.post h2 {
-  font-size: 1.5rem;
-}
-
-.post h3 {
-  font-size: 1.25rem;
-}
-
-.post p {
-  margin-bottom: 1.5rem;
-}
-
-.post ul,
-.post ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.post li {
-  margin-bottom: 0.5rem;
-}
-
-.post a {
-  color: #5c7cfa;
-  text-decoration: underline;
-}
-
-.post a:hover {
-  color: #364fc7;
-}
-
-.post img {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  border-radius: 8px;
-}
-
-.post blockquote {
-  border-left: 4px solid #ccc;
-  padding-left: 1rem;
-  font-style: italic;
-  color: #555;
-  margin: 1.5rem 0;
-}
-
-.post code {
-  background: #f8f8f8;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-family: monospace;
-  color: #d6336c;
-}
-
-.post pre {
-  background: #f1f3f5;
-  padding: 1rem;
-  overflow-x: auto;
-  border-radius: 6px;
-  margin-bottom: 2rem;
-}
-.post-featured-image {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  border-radius: 12px;
 }
