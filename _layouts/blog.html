@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<section class="blog-list">
+  {% for post in site.posts %}
+  <article class="blog-post" style="display: flex; margin-bottom: 2rem">
+    {% if post.image %}
+    <a href="{{ post.url }}" style="flex: 0 0 150px; margin-right: 1rem">
+      <img
+        src="{{ post.image }}"
+        alt="Imagem do artigo {{ post.title }}"
+        style="
+          width: 150px;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+        "
+      />
+    </a>
+    {% endif %}
+
+    <div style="flex: 1">
+      <h2>
+        <a href="{{ post.url }}" style="text-decoration: none; color: #333">
+          {{ post.title }}
+        </a>
+      </h2>
+      <p style="color: #777; font-size: 0.9rem">
+        {{ post.date | date: "%d %B %Y" }} | Por {{ post.author }}
+      </p>
+      <p>
+        {{ post.description | default: post.excerpt | strip_html | truncate: 160
+        }}
+      </p>
+      <a href="{{ post.url }}" style="color: #007acc; font-weight: bold">
+        Ler mais &rarr;
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</section>
