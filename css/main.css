@@ -789,7 +789,7 @@ figure img {
     display: block;
   }
 
-  .header {
+  .header-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1014,16 +1014,19 @@ figure img {
 }
 
 @media screen and (min-width: 90em) {
-  .header .container {
+  /* .header .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-  }
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 2rem;
+  } */
 
   /* Mostrar o logo no desktop */
   .logo-icon__logo.sm-hide.md-show {
-    display: block !important;
+    display: flex;
+    align-items: center;
     min-width: 200px; /* largura mínima do container do logo */
     min-height: 100px; /* altura mínima do container do logo */
     margin-right: 2rem; /* espaço entre logo e menu */
@@ -1047,12 +1050,11 @@ figure img {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem; /* espaçamento entre links */
+    gap: 0.5rem; /* espaçamento entre links */
   }
 
   .header-nav ul li a {
     text-decoration: none;
-    color: inherit;
     color: var(--special-color);
   }
 
