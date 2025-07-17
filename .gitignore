@@ -1,0 +1,21 @@
+# Pasta gerada pelo Jekyll com o site final
+_site/
+
+# Cache do Sass
+.sass-cache/
+
+# Cache do Jekyll
+.jekyll-cache/
+
+# Gems instaladas localmente
+.bundle/
+
+# Arquivos do sistema (MacOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
