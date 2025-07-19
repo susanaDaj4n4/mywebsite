@@ -6,44 +6,31 @@ layout: default
 
 <section class="blog-list">
   {% for post in site.posts %}
-  <article class="blog-post" style="display: flex; margin-bottom: 2rem">
+  <article class="blog-post">
     {% if post.image %}
-    <a href="{{ post.url }}" style="flex: 0 0 150px; margin-right: 1rem">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="blog-post-image-link">
       <img
         src="{{ post.image }}"
         alt="Imagem do artigo {{ post.title }}"
-        style="
-          width: 150px;
-          height: auto;
-          object-fit: cover;
-          border-radius: 8px;
-        "
+        class="blog-post-image"
       />
     </a>
     {% endif %}
 
-    <div style="flex: 1">
+    <div class="blog-post-content">
       <h2>
-        <a
-          href="{{ post.url }}"
-          style="
-            text-decoration: none;
-            color: #f6f6f6;
-            font-size: 2rem;
-            font-weight: 700;
-          "
-        >
+        <a href="{{ site.baseurl }}{{ post.url }}" class="blog-post-title-link">
           {{ post.title }}
         </a>
       </h2>
-      <p style="color: #777; font-size: 0.9rem">
+      <p class="blog-post-meta">
         {{ post.date | date: "%d %B %Y" }} | Por {{ post.author }}
       </p>
-      <p>
+      <p class="blog-post-description">
         {{ post.description | default: post.excerpt | strip_html | truncate: 160
         }}
       </p>
-      <a href="{{ post.url }}" style="color: #007acc; font-weight: bold">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="blog-post-readmore">
         Ler mais &rarr;
       </a>
     </div>
