@@ -18,6 +18,7 @@ meta:
   og:description: 'Evite os riscos do talco na sua maquilhagem. Aprenda por que optar por um pó sem talco é a melhor escolha para a sua pele e saúde.'
   og:image: /assets/imagens/talco_Dajoana.jpg
 ---
+![Talco nos Cosméticos](/assets/imagens/talco_Dajoana.jpg)
 
 ### Por que Deve Escolher um Pó Sem Talco na sua Rotina de Beleza
 
