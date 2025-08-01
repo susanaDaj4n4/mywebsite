@@ -5,7 +5,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <section class="blog-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <article class="blog-post">
     {% if post.image %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="blog-post-image-link">
@@ -37,3 +37,22 @@ layout: default
   </article>
   {% endfor %}
 </section>
+
+<nav class="pagination" role="navigation">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">« Anterior</a>
+  {% else %}
+  <span class="previous disabled">« Anterior</span>
+  {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+  paginator.page %}
+  <span class="page current">{{ page }}</span>
+  {% else %}
+  <a href="{{ paginator.paginate_path | replace: ':num', page }}" class="page"
+    >{{ page }}</a
+  >
+  {% endif %} {% endfor %} {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Próxima »</a>
+  {% else %}
+  <span class="next disabled">Próxima »</span>
+  {% endif %}
+</nav>

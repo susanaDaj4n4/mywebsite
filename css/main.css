@@ -28,7 +28,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* para garantir que não aparece scroll horizontal */
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -44,10 +44,10 @@ body {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -61,12 +61,12 @@ a {
 
 .maxWidth {
   max-width: 100%; /* ou 90% */
-  margin: 1rem auto;
+  margin: 0 auto;
   /* padding: 0 1rem; */
   box-sizing: border-box;
 }
 .container {
-  margin: 1.5rem 1.5rem;
+  margin: 1rem 1.5rem;
   /* width: 100vw; */
   max-width: 100%;
   padding-top: 6rem;
@@ -109,7 +109,7 @@ a {
 }
 
 .logo-icon__logo img {
-  width: 100%; /* Ocupa toda a largura do container */
+  width: 160%; /* Ocupa toda a largura do container */
   height: auto; /* Mantém a proporção */
   display: block; /* Remove espaço extra embaixo da imagem */
 }
@@ -181,21 +181,18 @@ a {
 .hamburguerMenu-closed {
   display: none;
 }
-
+.container.heroBanner {
+  padding-top: 4rem; /* 64px */
+  padding-bottom: 4rem; /* 64px */
+  margin-top: 0;
+  box-sizing: border-box;
+}
 .heroBanner {
-  /* height: 50vh;
-  margin: 1rem auto; */
-
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  /* background: linear-gradient(45deg, white 50%, transparent 50%) left
-      calc(50% + 20px) bottom no-repeat,
-    linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px)
-      bottom no-repeat;
-  background-size: 40px 40px; */
 }
 
 .heroBanner_content {
@@ -227,6 +224,7 @@ a {
 .heroBanner_title {
   color: #f6f6f6;
   font-weight: 600;
+  text-shadow: -7px 1px 11px black;
 }
 
 .heroBanner_subtitle {
@@ -238,8 +236,8 @@ a {
 }
 
 .heroBanner_btn {
-  background-color: var(--secondary-color);
-  color: var(--special-color);
+  background-color: var(--special-color);
+  color: var(--primary-color);
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
@@ -254,8 +252,8 @@ a {
 }
 
 .heroBanner_btn:hover {
-  background-color: var(--special-color);
-  color: var(--primary-text);
+  background-color: var(--secondary-color);
+  color: var(--special-color);
 }
 
 .btn {
@@ -371,12 +369,6 @@ a {
   justify-content: space-between;
 }
 
-/* .mainContent_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-} */
 .mainContent_img,
 .mainContent_text {
   width: 100%;
@@ -717,6 +709,16 @@ figure img {
     width: 100%; /* Corrigido */
   }
 
+  .container.heroBanner {
+    padding-top: 4rem; /* aumenta o espaço em cima */
+    padding-bottom: 4rem; /* adiciona ou aumenta espaço em baixo */
+    margin-top: 0;
+  }
+
+  .maxWidth {
+    margin-top: 0;
+  }
+
   .heroBanner_content {
     margin: 1.5rem;
     border-radius: 5px;
@@ -789,12 +791,18 @@ figure img {
     display: block;
   }
 
+  .header-container .container {
+    margin-top: 0;
+    padding-top: 0; /* ou 0 se não precisares de espaço */
+  }
+
   .header-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
+    margin-top: 0;
     padding: 0;
     background-color: var(--primary-color);
     background-image: linear-gradient(transparent, var(--primary-color));
@@ -803,14 +811,6 @@ figure img {
     width: 15rem;
     margin: auto;
   }
-  /* Esconder logo mobile e mostrar logo desktop */
-  /* .logo-icon__logo {
-    display: none;
-  }
-  .logo-icon__logo--desktop {
-    display: block;
-    width: 12rem;
-  } */
 
   .header-nav {
     margin-top: 1.75rem;
@@ -839,38 +839,39 @@ figure img {
     text-decoration: underline;
   }
 
+  .container.heroBanner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .heroBanner {
     background-image: url(../image/oleos_dajoana.jpg);
     background-size: cover; /* cobre toda a área, mesmo que corte um pouco */
     background-position: center center; /* centra a imagem */
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
 
     width: 100%;
-    /* max-width: 600px; */
-
-    margin-left: 1rem;
     border-radius: 5px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* flex-wrap: wrap; */
     justify-content: center;
 
-    min-height: 80vh;
-
-    max-height: 100vh;
-    overflow: hidden;
+    min-height: 120vh;
+    max-height: none;
   }
 
   .heroBanner_btn {
     padding: 0.9em 2em;
     margin: 10px auto;
-    background-color: var(--secondary-color);
-    color: #f6f6f6;
+    background-color: var(--special-color);
+    color: var(--primary-text);
     text-decoration: none;
-    box-sizing: border-box; /*chat*/
+    box-sizing: border-box;
     border-radius: 5px;
     font-weight: 600;
     transition: background-color 0.3s ease;
@@ -1014,56 +1015,21 @@ figure img {
 }
 
 @media screen and (min-width: 90em) {
-  /* .header .container {
+  .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 2rem;
-  } */
-
-  /* Mostrar o logo no desktop */
-  .logo-icon__logo.sm-hide.md-show {
-    display: flex;
-    align-items: center;
-    min-width: 200px; /* largura mínima do container do logo */
-    min-height: 100px; /* altura mínima do container do logo */
-    margin-right: 2rem; /* espaço entre logo e menu */
-  }
-
-  /* Ajustar a imagem do logo */
-  .logo-icon__logo.sm-hide.md-show img.top_header_logo {
-    display: block;
-    max-width: 100%;
-    height: 80px; /* altura fixa para o logo */
-    width: auto; /* largura proporcional */
-  }
-
-  /* Navegação em linha */
-  .header-nav {
-    margin: 0;
-  }
-
-  .header-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0.5rem; /* espaçamento entre links */
-  }
-
-  .header-nav ul li a {
-    text-decoration: none;
-    color: var(--special-color);
   }
 
   .hamburguerMenu-closed {
     display: none;
   }
   .header__navList {
-    max-width: 60vw; /* limita a largura total da ul */
-    justify-content: flex-start; /* alinha à esquerda se precisar */
+    max-width: 60vw;
+    justify-content: flex-start;
   }
 
   .heroBanner {
@@ -1072,7 +1038,6 @@ figure img {
     background-size: cover;
     background-position: center;
     align-items: center;
-    /* height: 100vh; altura do banner, podes ajustar */
   }
 
   .col-xl-3 {

@@ -10,9 +10,19 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
 markdown: kramdown
 permalink: /:categories/:title/
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/page:num/'
+  title: ':title - Página :num'
+  trail:
+    before: 2
+    after: 2
 
 defaults:
   - scope:

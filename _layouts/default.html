@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <!-- prettier-ignore-start -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- prettier-ignore-end -->
 
-    <title>Blog | DaJoana | Cursos de Cosmética Natural Online</title>
+    <title>
+      {% if page.title %}{{ page.title }} | {% endif %}DaJoana Cosmética Natural
+    </title>
     <meta
       name="description"
-      content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."
+      content="{% if page.description %}{{ page.description }}{% else %}Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural.{% endif %}"
     />
 
-    <!-- SEO -->
+    <!-- SEO Open Graph -->
     <meta
       property="og:title"
-      content="Blog | DaJoana | Cursos de Cosmética Natural Online"
+      content="{{ page.title | default: 'DaJoana Cosmética Natural' }}"
     />
     <meta
       property="og:description"
-      content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
+      content="{{ page.description | default: 'Aprenda a criar os seus próprios cosméticos naturais com cursos online, fórmulas gratuitas e workshops.' }}"
     />
     <meta
       property="og:image"
-      content="/imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"
+      content="{{ page.image | default: '/imagem/banner-home.jpg' }}"
     />
-    <meta property="og:url" content="https://www.dajoana.com" />
+    <meta property="og:url" content="https://www.dajoana.com{{ page.url }}" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: 'DaJoana Cosmética Natural' }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description | default: 'Aprenda a criar os seus próprios cosméticos naturais com cursos online, fórmulas gratuitas e workshops.' }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ page.image | default: '/imagem/banner-home.jpg' }}"
+    />
 
     <!-- Favicon -->
     <link rel="icon" href="/logo_usado/favicon-32x32.ico" type="image/x-icon" />
@@ -36,7 +50,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -52,7 +66,9 @@
   <body class="fx js">
     <!-- Logo mobile -->
     <div class="logo-icon md-hide">
-      <img src="/logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
+      <a href="/">
+        <img src="/logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
+      </a>
       <!-- Ícone hamburguer -->
       <a href="#" id="hamburguer-menu" aria-expanded="false" class="menu-icon">
         <svg
@@ -77,22 +93,24 @@
       <div class="container">
         <!-- Logo desktop -->
         <div class="logo-icon__logo sm-hide md-show">
-          <img
-            src="/logo_usado/SVG FILE.svg"
-            class="top_header_logo"
-            alt="DaJoana Logo"
-            width="200"
-          />
+          <a href="/">
+            <img
+              src="/logo_usado/SVG FILE.svg"
+              class="top_header_logo"
+              alt="DaJoana Logo"
+              width="200"
+            />
+          </a>
         </div>
 
         <!-- Navegação -->
         <nav class="header-nav" role="navigation">
           <ul id="header__navList" class="header__navList" aria-hidden="true">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/sobre.html">Sobre</a></li>
             <li><a href="/cursos.html" id="linkCursos">Cursos</a></li>
             <li><a href="#footer__socialLinks">Contactos</a></li>
-            <li><a href="#o-livro-da-avo">livro d'avó</a></li>
+            <li><a href="#o-livro-da-avo">Livro d'Avó</a></li>
             <li><a href="/blog/">Blog</a></li>
           </ul>
         </nav>
@@ -112,12 +130,11 @@
         <p>
           <a href="https://www.livroreclamacoes.pt/">Livro de Reclamações</a> |
           <a href="https://ec.europa.eu/consumers/odr">Resolução de Litígios</a>
-          |
-          <a href="/politica-privacidade.html">Política de Privacidade</a> |
+          | <a href="/politica-privacidade.html">Política de Privacidade</a> |
           <a href="/cookies.html">Política de Cookies</a>
         </p>
         <div class="social-icons">
-          <ul class="footer__socialLinks">
+          <ul id="footer__socialLinks">
             <li>
               <a href="https://www.instagram.com/dajoana_cosmeticaformacao/">
                 <i class="fa-brands fa-square-instagram"></i>
