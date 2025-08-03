@@ -672,6 +672,17 @@ figure img {
 }
 
 @media (max-width: 48em) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
   /* Logo grande escondido */
   .logo-icon__logo {
     display: none !important;
@@ -845,7 +856,7 @@ figure img {
   }
 
   .heroBanner {
-    background-image: url(../image/oleos_dajoana.jpg);
+    background-image: url(../image/faça_cosmeticos_DaJoana.jpg);
     background-size: cover; /* cobre toda a área, mesmo que corte um pouco */
     background-position: center center; /* centra a imagem */
     background-repeat: no-repeat;
@@ -1033,7 +1044,7 @@ figure img {
   }
 
   .heroBanner {
-    background-image: url(../image/oleos_dajoana.jpg);
+    background-image: url(../image/faça_cosmeticos_DaJoana.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

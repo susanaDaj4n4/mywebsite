@@ -3,8 +3,20 @@ email: cosmeticanatural_formacao@dajoana.com
 description: >
   Explore artigos e tendências em cosmética natural, com dicas práticas, receitas caseiras e soluções ecológicas para cuidar da sua pele todos os dias.
 
-baseurl: '' # importante se usares GitHub Pages
+baseurl: '' # mantém vazio se usares domínio próprio
 url: 'https://www.dajoana.com'
+
+# Informação de redes sociais (melhora SEO e Open Graph)
+social:
+  name: Blog DaJoana
+  links:
+    - https://www.instagram.com/dajoana_cosmeticaformacao
+    - https://www.facebook.com/dajoanacosmeticanatural
+    - https://www.tiktok.com/@dajoana_cosmetica
+
+# Idioma e fuso horário globais
+lang: pt-PT
+timezone: Europe/Lisbon
 
 plugins:
   - jekyll-feed
@@ -23,6 +35,8 @@ pagination:
   trail:
     before: 2
     after: 2
+  sort_field: 'date'
+  sort_reverse: true
 
 defaults:
   - scope:
