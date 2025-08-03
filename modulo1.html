@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta charset="UTF-8">
+     <!-- Charset e viewport -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <!-- Título -->
         <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
-        <link rel="icon" href="imagem/favicon-32x32.ico" type="image/x-icon">
+
+        <!-- Favicon -->
+        <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="assets/icomoon-icon/style.css">
-        <meta name="description" content="Aprenda a criar cosméticos naturais, veganos e artesanais com os cursos online do DaJoana. Descubra fórmulas, workshops e aulas práticas com ingredientes naturais.">
-        !-- SEO -->
-        <meta name="author" content="Susana Soares Silva"/>
-        <meta name="keywords" content="cosmética natural, cursos online, fórmulas cosméticas, DaJoana, cosmética artesanal, ingredientes naturais, workshops cosméticos"/>
 
-        <!-- Open Graph para redes sociais -->
-        <meta
-        property="og:title" content="DaJoana | Cursos de Cosmética Natural Online"/>
-        <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
-        />
-        <meta property="og:image" content="imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"/>
-        <!-- usa uma imagem relevante -->
-        <meta property="og:url" content="https://www.dajoana.com"/>
+        <!-- SEO base -->
+        <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+        <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+        <meta name="author" content="Susana Soares Silva">
+        <meta name="copyright" content="DaJoana Cosmética Natural">
+        <link rel="canonical" href="https://www.dajoana.com/" />
+
+        <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+        <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
+        <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
+        <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
+        <meta property="og:url" content="https://www.dajoana.com" />
         <meta property="og:type" content="website" />
-    
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <meta property="og:locale" content="pt_PT" />
 
+        <!-- Twitter Cards (também usado por Telegram e outros) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+        <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+        <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
     </head>
 
-    <body>
+
+    <body class="fx js">
         <!-- Este ícone só aparece em telas pequenas -->
         <div class="logo-icon md-hide">
             <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
@@ -46,16 +62,16 @@
 
     
 
-        <header class="header" data-paralax data-p-velocity="0.5">  
+        <header class="header-container" data-paralax data-p-velocity="0.5">  
             <div class="container">
                 <!-- Este aparece só em telas médias e grandes -->
                 <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-                    <nav class="header-nav ">               
+                    <nav class="header-nav" role="navigation">               
                         <ul id="header__navList" class="header__navList" aria-hidden="true">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
                             <li><a href="#footer__socialLinks">Contactos</a></li>
                             <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
                             <li><a href="/blog/">Blog</a></li>
@@ -72,7 +88,7 @@
                     <div class="heroBanner_content"> 
                         <h1 class="heroBanner_title">Introdução à Dermatologia e Iniciação à Cosmetologia</h1>
                         <h2 class="heroBanner_subtitle">
-                            Conheça os fundamentos essenciais da pele, do cabelo e dos principais ingredientes utilizados em cosméticos naturais, através de aulas teóricas ricas em conhecimento técnico e aplicável.
+                            Aprenda os fundamentos para formular com segurança.
                         </h2>
                         <a href="https://www.udemy.com/course/introducao-dermatologia-iniciacao-cosmetologia/?referralCode=E62FC291C56DC3199864" class="heroBanner_btn">Saiba Mais</a>
                     </div>
@@ -86,11 +102,9 @@
                             <a href="#"><span class="fa-solid fa-kitchen-set"></span>
                                 <div class="card_content">
 
-                                    <h3 class="middleContent_title">Compreender a estrutura e função da pele é essencial</h3>
+                                    <h3 class="middleContent_title">Aprenda a estrutura e função da pele</h3>
                                     <p class="middleContent_text">
-                                        Antes de começar a formular, é fundamental saber como funciona a pele.
-                                        Através da introdução à dermatologia, percebemos as diferentes camadas da pele, as suas funções protetoras, e como ela reage aos ingredientes. 
-                                        Esta base ajuda a criar fórmulas seguras, eficazes e adaptadas a cada tipo de pele, respeitando as suas necessidades naturais.
+                                        Descubra como a pele funciona e reage aos ingredientes. Crie fórmulas seguras, eficazes e adaptadas a cada tipo de pele.
                                     </p>
                                 </div>
                             </a>
@@ -101,12 +115,9 @@
                                 <span class="fa-solid fa-explosion"></span>
                                 <div class="card_content">
 
-                                    <h3 class="middleContent_title">Conhecer o couro cabeludo e a fibra capilar é crucial para criar produtos capilares eficazes</h3>
+                                    <h3 class="middleContent_title">Entenda o couro cabeludo e a fibra capilar</h3>
                                         <p class="middleContent_text">
-                                            A saúde do cabelo começa no couro cabeludo. 
-                                            Compreender o couro cabeludo e como pode afetar o crescimento e a qualidade dos fios. 
-                                            Entender a estrutura da fibra capilar para conseguir escolher ingredientes que realmente penetrem, fortaleçam ou protejam o cabelo. 
-                                            Esta base é indispensável para formular champôs, máscaras ou séruns que façam a diferença.
+                                            Saiba como cuidar do couro cabeludo e da fibra capilar para criar champôs, máscaras e séruns realmente eficazes.
                                         </p>
                                 </div>
                             </a>
@@ -115,11 +126,9 @@
                             <a href="#">
                                 <span class="fa-solid fa-graduation-cap"></span>
                                 <div class="card_content">
-                                    <h3 class="middleContent_title">Trabalhar com ingredientes de forma consciente</h3>
+                                    <h3 class="middleContent_title">Domine o uso de ingredientes cosméticos</h3>
                                         <p class="middleContent_text">
-                                        A iniciação à cosmetologia é onde começamos a entender as funções dos ingredientes. 
-                                        Saber como atuam, como se comportam juntos e qual o papel de cada um numa formulação é o que diferencia uma receita amadora de uma fórmula profissional. 
-                                        Esta base evita erros como desestabilização de emulsões ou uso incorreto de ativos.
+                                        Entenda as funções dos ingredientes e como combiná-los para criar fórmulas profissionais e estáveis.
                                     </p>
 
                                 </div>
@@ -131,11 +140,9 @@
                                 <span class="fa-solid fa-people-arrows"></span>
                                 <div class="card_content">
 
-                                    <h3 class="middleContent_title">Fundamentos dão autonomia na formulação</h3>
+                                    <h3 class="middleContent_title">Ganhe autonomia na formulação</h3>
                                         <p class="middleContent_text">
-                                            Quando entendemos os princípios da dermatologia e da cosmetologia, ganhamos liberdade. 
-                                            Deixamos de depender apenas de receitas prontas e começamos a criar produtos com consciência e intenção. 
-                                            Podemos adaptar fórmulas com mais segurança e criatividade.
+                                            Domine os fundamentos para criar e adaptar fórmulas com segurança, consciência e criatividade.
                                         </p>
                                 </div>
                             </a>
@@ -145,35 +152,34 @@
             </section>
 
             <section class="mainContent">
-                <div class="row maxWidth">
+                <h2 class="mainContent_title">Introdução à Dermatologia e Iniciação à Cosmetologia</h2>
                     <div class="contentGrid">
-                        <article class="mainContent_article col-sm-12 col-xl-6">
+                        <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
                             <div class="mainContent_container">
                                 <div class="mainContent_img">
                                     <img src="image/int_DermatDaJoana.jpg" alt="introdução Dermatologia">
                                 </div>
 
                                 <div class="mainContent_text">
-                                    <h3 class="mainContent_title">Introdução à Dermatologia</h3>
-                                    <div>
-                                        <ul class="mainContent_list__cursos">
-                                            <li>Aula 1 - A Pele</li>
-                                            <li>Aula 2 - O Cabelo</li>
-                                            <li>Aula 3 - Fatores Externos</li>
-                                            <li>Aula 4 - A Beleza Natural</li>
-                                            <li>Aula 5 - Resumo da Dermatologia</li>
-                                        </ul>
-                                    </div>
+                    
+                                    <ul class="mainContent_list__cursos">
+                                        <li>Aula 1 - A Pele</li>
+                                        <li>Aula 2 - O Cabelo</li>
+                                        <li>Aula 3 - Fatores Externos</li>
+                                        <li>Aula 4 - A Beleza Natural</li>
+                                        <li>Aula 5 - Resumo da Dermatologia</li>
+                                    </ul>
                                 </div>
                             </div>
+                            
                         </article>
-                        <article class="mainContent_article col-sm-12 col-xl-6">
+                
+                        <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
                             <div class="mainContent_container">
                                 <div class="mainContent_img">
                                     <img src="image/inicCosm_Dajoana.jpg" alt="Iniciação Cosmetologia">
                                 </div>
                                 <div class="mainContent_text">
-                                    <h3 class="mainContent_title">Iniciação à Cosmetologia</h3>
                                         <ul class="mainContent_list__cursos">
                                             <li>Aula 1 - Introdução</li>
                                             <li>Aula 2 - Parâmetros Técnicos</li>
@@ -231,8 +237,8 @@
 
                             </div>
                         </article>
-
-
+                    </div>
+                
             </section>
             <section class="section_btns">
                 <div class="btnContainer">

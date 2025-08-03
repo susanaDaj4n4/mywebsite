@@ -3,29 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Título -->
     <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
-    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <meta
-      name="description"
-      content="Aprenda a criar extratos botânicos eficazes e seguros para cosméticos naturais. Conheça técnicas de extração, escolha de plantas e aplicações práticas com ingredientes certificados."
-    />
-    <!-- SEO -->
-    <meta name="author" content="Susana Soares Silva"/>
-    <meta name="keywords" content="cosmética natural, cursos online, fórmulas cosméticas, DaJoana, cosmética artesanal, ingredientes naturais, workshops cosméticos"/>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph para redes sociais -->
-    <meta
-      property="og:title" content="DaJoana | Cursos de Cosmética Natural Online"/>
-    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
-    />
-    <meta property="og:image" content="imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"/>
-    <!-- usa uma imagem relevante -->
-    <meta property="og:url" content="https://www.dajoana.com"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SEO base -->
+    <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+    <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+    <meta name="author" content="Susana Soares Silva">
+    <meta name="copyright" content="DaJoana Cosmética Natural">
+    <link rel="canonical" href="https://www.dajoana.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+    <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
+    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
+    <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
+    <meta property="og:url" content="https://www.dajoana.com" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Cards (também usado por Telegram e outros) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+    <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+    <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -45,18 +58,16 @@
       </a>
     </div>
 
-    
-
-    <header class="header" data-paralax data-p-velocity="0.5">  
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
       <div class="container">
-          <!-- Este aparece só em telas médias e grandes -->
+        <!-- Este aparece só em telas médias e grandes -->
         <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-          <nav class="header-nav ">               
+          <nav class="header-nav" role="navigation">               
             <ul id="header__navList" class="header__navList" aria-hidden="true">
               <li><a href="index.html">Home</a></li>
               <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
               <li><a href="#footer__socialLinks">Contactos</a></li>
               <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
               <li><a href="/blog/">Blog</a></li>
@@ -71,14 +82,14 @@
       <section class="container heroBanner">
         <div class="maxWidth">
           <div class="heroBanner_content"> 
-          <h1 class="heroBanner_title">Curso Extratos Botânicos na Cosmética Natural</h1>
-          <h2 class="heroBanner_subtitle">
-            Descubra como extrair o melhor das plantas para os seus cosméticos
-            naturais. <br>Aprenda a fazer extratos botânicos eficazes, seguros e
-            sustentáveis, com foco em propriedades cosméticas e ingredientes
-            certificados.
-          </h2>
-          <a href="https://www.udemy.com/course/extratos-botanicos/?referralCode=D34950B96EDCCE723A2D" class="heroBanner_btn">Saiba Mais</a>
+            <h1 class="heroBanner_title">Curso de Extratos Botânicos na Cosmética Natural</h1>
+            <h2 class="heroBanner_subtitle">
+              Descubra como extrair o melhor das plantas para os seus cosméticos naturais. <br>
+              Aprenda a criar extratos botânicos eficazes, seguros e sustentáveis, com foco em propriedades cosméticas e ingredientes certificados.
+            </h2>
+            <a href="https://www.udemy.com/course/extratos-botanicos/?referralCode=D34950B96EDCCE723A2D" class="heroBanner_btn">Saiba Mais</a>
+        
+          </div>
         </div>
       </section>
 
@@ -90,10 +101,9 @@
               <a href="#">
                 <span class="fa-solid fa-graduation-cap"></span>
                 <div class="card_content">
-                  <h3 class="middleContent_title">Escolha correta da planta e parte vegetal utilizada</h3>
+                  <h3 class="middleContent_title">Como escolher a planta e a parte vegetal certa</h3>
                   <p class="middleContent_text">
-                    Escolha da planta e a parte vegetal a utilizar. 
-                    Cada parte tem compostos ativos diferentes e propriedades distintas. 
+                    Aprenda a selecionar a planta ideal e a parte vegetal correta para obter compostos ativos e propriedades cosméticas específicas.
                   </p>
                 </div>
               </a>
@@ -104,24 +114,24 @@
                 <span class="fa-solid fa-kitchen-set"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Método de extração adequado aos compostos desejados</h3>
+                  <h3 class="middleContent_title">Método de extração certo para cada tipo de composto</h3>
                   <p class="middleContent_text">
-                    O método de extração é devidamente. É tido em conta o tipo de compostos que quero obter.
-                    Cada técnica tem o seu propósito e quando aplicada corretamente, resulta num extrato mais estável, funcional e seguro para uso cosmético.
+                    Escolha o método de extração mais adequado para obter os compostos desejados. 
+                    Cada técnica, quando aplicada corretamente, garante extratos botânicos mais estáveis, eficazes e seguros para a cosmética natural.
                   </p>
                 </div>
               </a>
             </article>
 
             <article class="col col-sm-12 col-md-6 col-xl-3">
-              <a href="#">
-                <span class="fa-solid fa-explosion"></span>
+              <a href="#"><span class="fa-solid fa-explosion"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Conservação e estabilidade do extrato</h3>
+                  <h3 class="middleContent_title">Conservação e estabilidade dos extratos botânicos</h3>
                   <p class="middleContent_text">
-                    Após obter o extrato, a conservação é uma etapa importante. 
-                    Dependendo do extratos há a necessidades de um conservante adequado e de um bom acondicionamento.
+                    A conservação é essencial para manter a qualidade dos extratos botânicos. 
+                    Escolher o conservante adequado e garantir um bom acondicionamento aumenta a estabilidade e a segurança do extrato para uso cosmético.
+                  </p>
                 </div>
               </a>
             </article>
@@ -131,11 +141,10 @@
                 <span class="fa-solid fa-people-arrows"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Aplicação com base na funcionalidade do extrato</h3>
+                  <h3 class="middleContent_title">Aplicar extratos botânicos de forma funcional</h3>
                   <p class="middleContent_text">
-                    A aplicação de extratos nas formulações com um objetivo. 
-                    Analisar as propriedades de cada extrato e respeito pelas concentrações ideais. 
-                    Um extrato só faz sentido se for usado com consciência e intenção, e não apenas como um ingrediente “natural” decorativo.
+                    A utilização de extratos botânicos nas formulações deve ter um objetivo claro. 
+                    É essencial analisar as propriedades de cada extrato e respeitar as concentrações ideais para garantir eficácia e segurança nos cosméticos naturais.
                   </p>
                 </div>
               </a>
@@ -148,7 +157,7 @@
       <section class="mainContent">
         <h2 class="mainContent_title">Extratos Botânicos na Cosmética Natural</h2>
           <div class="contentGrid">
-            <article class="mainContent_article col-sm-12 col-xl-6">
+            <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
               <div class="mainContent_container">
                 <div class="mainContent_img">
                   <img src="image/plantas_DaJoana.jpg" alt="As plantas para extratos" />

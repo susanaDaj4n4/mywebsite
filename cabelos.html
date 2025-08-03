@@ -3,63 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título -->
     <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
-    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <meta
-      name="description"
-      content="Aprenda a criar champôs, máscaras e cuidados capilares naturais. Fórmulas eficazes com ingredientes certificados, seguras para o cabelo e para o planeta."
-    />
-    <!-- SEO -->
-    <meta name="author" content="Susana Soares Silva"/>
-    <meta name="keywords" content="cosmética natural, cursos online, fórmulas cosméticas, DaJoana, cosmética artesanal, ingredientes naturais, workshops cosméticos"/>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph para redes sociais -->
-    <meta
-      property="og:title" content="DaJoana | Cursos de Cosmética Natural Online"/>
-    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
-    />
-    <meta property="og:image" content="imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"/>
-    <!-- usa uma imagem relevante -->
-    <meta property="og:url" content="https://www.dajoana.com"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SEO base -->
+    <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+    <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+    <meta name="author" content="Susana Soares Silva">
+    <meta name="copyright" content="DaJoana Cosmética Natural">
+    <link rel="canonical" href="https://www.dajoana.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+    <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
+    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
+    <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
+    <meta property="og:url" content="https://www.dajoana.com" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Cards (também usado por Telegram e outros) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+    <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+    <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="fx js">
         <!-- Este ícone só aparece em telas pequenas -->
     <div class="logo-icon md-hide">
       <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
-    
-      <!-- Ícone hamburguer -->
+                <!-- Ícone hamburguer -->
       <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
-
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
         </svg>
       </a>
     </div>
 
-    
-
-    <header class="header" data-paralax data-p-velocity="0.5">  
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
       <div class="container">
           <!-- Este aparece só em telas médias e grandes -->
         <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-          <nav class="header-nav ">               
+          <nav class="header-nav" role="navigation">               
             <ul id="header__navList" class="header__navList" aria-hidden="true">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="cursos.html">Cursos</a></li>
-              <li><a href="#footer__socialLinks">Contactos</a></li>
-              <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
-              <li><a href="/blog/">Blog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
+                <li><a href="#footer__socialLinks">Contactos</a></li>
+                <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
+                <li><a href="/blog/">Blog</a></li>
             </ul>
           </nav>
         </div>
@@ -72,18 +80,12 @@
       <section class="container heroBanner">
           <div class="maxWidth">
             <div class="heroBanner_content">         
-              <div class="heroBanner_iconPlay">
-                <i class="fa-brands fa-leanpub fa"></i>
-              </div>
-                <h1 class="heroBanner_title">Curso Cosméticos Capilares</h1>
-                <h2 class="heroBanner_subtitle">
-                  Aprenda a formular produtos capilares naturais adaptados a
-            diferentes tipos de cabelo.<br />
-            Este módulo prático ensina a criar champôs, máscaras e séruns
-            capilares com ingredientes certificados, seguros e eficazes,
-            respeitando o couro cabeludo e o meio ambiente.
+              <h1 class="heroBanner_title">Cosméticos Capilares</h1>
+              <h2 class="heroBanner_subtitle">
+                  Aprenda a formular champôs, máscaras e séruns capilares naturais.  
+                  Módulo prático para criar produtos seguros, eficazes e sustentáveis para todos os tipos de cabelo.
                 </h2>
-              <a href="https://www.udemy.com/course/cosmeticos-capilares/?referralCode=21C86AEED2442292EED4" class="heroBanner_btn">Saiba Mais</a>
+                <a href="https://www.udemy.com/course/cosmeticos-capilares/?referralCode=21C86AEED2442292EED4" class="heroBanner_btn">Saiba Mais</a>
             </div>       
           </div>
       </section>
@@ -94,18 +96,14 @@
         <div class="maxWidth">
           <div class="row">
             <article class="col col-sm-12 col-md-6 col-xl-3">
-              <a href="#">
-                <span class="fa-solid fa-graduation-cap"></span>
+              <a href="#"><span class="fa-solid fa-graduation-cap"></span>
                 <div class="card_content">
-                  <h3 class="middleContent_title">Cada tipo de cabelo precisa de ingredientes específicos</h3>
+                  <h3 class="middleContent_title">Cada tipo de cabelo exige ingredientes naturais adequados</h3>
                   <p class="middleContent_text">
-                    Os cabelos não são iguais, por isso, antes de formular qualquer produto capilar natural, é essencial compreender as necessidades do fio e do couro cabeludo. 
-                    Saber escolher ingredientes naturais que respeitam a estrutura do cabelo e devolvem o equilíbrio é a base para criar produtos realmente eficazes e personalizados.
+                    Cada cabelo tem necessidades únicas. Antes de formular, é essencial entender o fio e o couro cabeludo. 
+                    Escolher os ingredientes certos garante produtos naturais eficazes e personalizados.
                   </p>
-
                 </div>
-
-
               </a>
             </article>
 
@@ -116,9 +114,8 @@
 
                   <h3 class="middleContent_title">O couro cabeludo é pele e deve ser tratado como tal</h3>
                   <p class="middleContent_text">
-                    Nao devemos esquecer que o couro cabeludo é pele e que, tal como o rosto, precisa de cuidados específicos. 
-                    Um couro cabeludo desequilibrado pode originar problemas como queda, caspa ou oleosidade excessiva. 
-                    Ao compreender melhor a anatomia e fisiologia dessa zona, conseguimos formular produtos que tratam a raiz do problema e não apenas mascaram os sintomas.
+                    O couro cabeludo também é pele e precisa de atenção. Quando está desequilibrado, pode causar queda, caspa ou oleosidade. 
+                    Entender sua fisiologia ajuda a formular produtos naturais que tratam a raiz do problema e não apenas os sintomas.
                   </p>
                 </div>
               </a>
@@ -129,11 +126,10 @@
                 <span class="fa-solid fa-explosion"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">A limpeza capilar natural exige um novo olhar sobre os tensioativos</h3>
+                  <h3 class="middleContent_title">Limpeza capilar natural: escolha e equilíbrio dos tensioativos</h3>
                   <p class="middleContent_text">
-                    Os champôs convencionais usam, muitas vezes, tensioativos agressivos que limpam em excesso e acabam por danificar o cabelo. 
-                    Quando entramos no mundo da cosmética capilar natural, precisamos de compreender bem os tipos de tensioativos disponíveis, as suas combinações e como equilibrar limpeza, suavidade e hidratação. 
-                    É uma parte essencial do curso — e faz toda a diferença nos resultados.
+                    Champôs convencionais usam tensioativos agressivos que podem danificar o cabelo.  
+                    Na cosmética capilar natural, é essencial conhecer os tipos de tensioativos, suas combinações e como equilibrar limpeza, suavidade e hidratação para obter melhores resultados.
                   </p>
                 </div>
               </a>
@@ -144,11 +140,10 @@
                 <span class="fa-solid fa-people-arrows"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Criar máscaras, condicionadores e séruns com ativos naturais é um verdadeiro cuidado profundo</h3>
+                  <h3 class="middleContent_title">Máscaras, condicionadores e séruns naturais para um cuidado profundo</h3>
                   <p class="middleContent_text">
-                    Mais do que apenas lavar, cuidar do cabelo envolve nutri-lo, protegê-lo e reparar danos. 
-                    Para isso, usamos manteigas vegetais, óleos ricos em nutrientes, proteínas hidrolisadas, extratos botânicos e ingredientes que devolvem brilho e força. 
-                    Quando sabemos combinar estes ativos de forma equilibrada, conseguimos criar cosméticos capilares que oferecem resultados reais e ainda com ingredientes limpos e éticos.
+                    Cuidar do cabelo vai além da lavagem: é nutrir, proteger e reparar danos.  
+                    Com manteigas vegetais, óleos nutritivos, proteínas, extratos botânicos e outros ativos naturais, criamos cosméticos capilares eficazes, limpos e éticos.
                   </p>
                 </div>
               </a>

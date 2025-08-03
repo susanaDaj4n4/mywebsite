@@ -3,58 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!-- Título -->
     <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
-    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon" />
+
+        <!-- Favicon -->
+    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+        <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <meta name="description" content="Aprende a criar desodorizantes naturais seguros, sem alumínio, com ingredientes certificados. Fórmulas práticas e eficazes adaptadas a vários tipos de pele."
-    />
-    <!-- SEO -->
-    <meta name="author" content="Susana Soares Silva"/>
-    <meta name="keywords" content="cosmética natural, cursos online, fórmulas cosméticas, DaJoana, cosmética artesanal, ingredientes naturais, workshops cosméticos"/>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph para redes sociais -->
-    <meta
-      property="og:title" content="DaJoana | Cursos de Cosmética Natural Online"/>
-    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
-    />
-    <meta property="og:image" content="imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"/>
-    <!-- usa uma imagem relevante -->
-    <meta property="og:url" content="https://www.dajoana.com"/>
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- SEO base -->
+    <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+    <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+    <meta name="author" content="Susana Soares Silva">
+    <meta name="copyright" content="DaJoana Cosmética Natural">
+    <link rel="canonical" href="https://www.dajoana.com/" />
+
+        <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+    <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
+    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
+    <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
+    <meta property="og:url" content="https://www.dajoana.com" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+        <!-- Twitter Cards (também usado por Telegram e outros) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+    <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+    <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="fx js">
     <!-- Este ícone só aparece em telas pequenas -->
     <div class="logo-icon md-hide">
       <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
     
-      <!-- Ícone hamburguer -->
-      <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
+            <!-- Ícone hamburguer -->
+        <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-        </svg>
-      </a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+        </a>
     </div>
 
     
 
-    <header class="header" data-paralax data-p-velocity="0.5">  
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
       <div class="container">
-          <!-- Este aparece só em telas médias e grandes -->
+                <!-- Este aparece só em telas médias e grandes -->
         <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-          <nav class="header-nav ">               
+          <nav class="header-nav" role="navigation">               
             <ul id="header__navList" class="header__navList" aria-hidden="true">
               <li><a href="index.html">Home</a></li>
               <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
               <li><a href="#footer__socialLinks">Contactos</a></li>
               <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
               <li><a href="/blog/">Blog</a></li>
@@ -68,12 +83,11 @@
     <main>
       <section class="container heroBanner">
         <div class="maxWidth">
-          <h1 class="heroBanner_title">Curso Desodorizantes Naturais</h1>
+          <h1 class="heroBanner_title">Desodorizantes Naturais</h1>
           <div class="heroBanner_content"> 
             <h2 class="heroBanner_subtitle">
-              Aprenda a formular desodorizantes naturais eficazes, com
-              ingredientes certificados <br>e sem compostos controversos como
-              alumínio.
+              Aprenda a formular desodorizantes naturais eficazes, seguros e certificados,  
+              livres de alumínio e compostos controversos.
             </h2>
             <a href="https://www.udemy.com/course/desodorizantes/?referralCode=EAA552AB563E8E162A93" class="heroBanner_btn">Saiba Mais</a>
           </div>
@@ -85,19 +99,14 @@
         <div class="maxWidth">
           <div class="row">
             <article class="col col-sm-12 col-md-6 col-xl-3">
-              <a href="#">
-                <span class="fa-solid fa-graduation-cap"></span>
+              <a href="#"><span class="fa-solid fa-graduation-cap"></span>
                 <div class="card_content">
-                  <h3 class="middleContent_title">Livres de alumínio e sais de alumínio pela sua ação antitranspirante agressiva</h3>
+                  <h3 class="middleContent_title">Desodorizantes livres de alumínio, respeitando a pele</h3>
                   <p class="middleContent_text">
-                    Evitar sais de alumínio, comuns nos desodorizantes convencionais. 
-                    Segundo estudos poderão bloqueiar temporariamente as glândulas sudoríparas, impedindo o corpo de transpirar. 
-                    São usados ingredientes que respeitem a fisiologia da pele e não interfirem com o equilíbrio do organismo.
+                    Os sais de alumínio bloqueiam temporariamente as glândulas sudoríparas e podem afetar a pele.  
+                    Nosso curso ensina a usar ingredientes naturais que respeitam a fisiologia da pele e mantêm o equilíbrio do corpo.
                   </p>
-
                 </div>
-
-
               </a>
             </article>
 
@@ -106,11 +115,10 @@
                 <span class="fa-solid fa-kitchen-set"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Absorção de substâncias pela pele e a sua bioacumulação</h3>
+                  <h3 class="middleContent_title">Absorção cutânea e prevenção na cosmética natural</h3>
                   <p class="middleContent_text">
-                    A pele é um órgão permeável e está em contacto constante com os produtos que usamos. 
-                    Embora ainda haja debates científicos, optamos pela prevenção. 
-                    Escolher ingredientes naturais, simples e eficazes, que não representem esse tipo de risco potencial para a saúde.
+                    A pele é permeável e absorve substâncias dos produtos aplicados.  
+                    Por precaução, usamos ingredientes naturais, simples e seguros, que minimizam riscos à saúde.
                   </p>
                 </div>
               </a>
@@ -121,10 +129,10 @@
                 <span class="fa-solid fa-explosion"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title" id = "blog">Valorização o controlo sobre os ingredientes</h3>
+                  <h3 class="middleContent_title">Controle total sobre os ingredientes naturais</h3>
                   <p class="middleContent_text">
-                    Fazer os próprios desodorizantes dá liberdade para escolher ingredientes mais suaves, como óleos vegetais, óleos essenciais e extratos botânicos. 
-                    Saber exatamente o que aplicamos no corpo e evitar substâncias que, mesmo permitidas pela indústria, não fazem sentido numa rotina natural e consciente.
+                    Fazer seus próprios desodorizantes permite escolher ingredientes suaves e naturais,  
+                    como óleos vegetais e essenciais, evitando substâncias desnecessárias na rotina consciente.
                   </p>
                 </div>
               </a>
@@ -135,10 +143,11 @@
                 <span class="fa-solid fa-people-arrows"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Um desodorizante deve cuidar, e não apenas mascarar odores</h3>
+                  <h3 class="middleContent_title">Desodorizante natural: cuidado e eficácia</h3>
                   <p class="middleContent_text">
-                    Um bom desodorizante natural não deve apenas disfarçar o cheiro corporal — ele deve também cuidar da pele, equilibrar o microbioma e permitir que o corpo respire livremente. 
-                    Com ingredientes como óleos essenciais antibacterianos e extratos calmantes, é possivel criar fórmulas que ajudam a neutralizar o odor de forma eficaz, sem bloquear a transpiração nem causar irritações.
+                    Um desodorizante natural deve cuidar da pele e equilibrar o microbioma,  
+                    neutralizando odores sem bloquear a transpiração ou irritar.  
+                    Usamos óleos essenciais antibacterianos e extratos calmantes para fórmulas eficazes e suaves.
                   </p>
                 </div>
               </a>

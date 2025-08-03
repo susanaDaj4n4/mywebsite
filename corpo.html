@@ -3,60 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título -->
     <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
-    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon" />
+
+      <!-- Favicon -->
+    <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+        <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <meta
-      name="description"
-      content="Formulador de loções, manteigas e cuidados naturais para o corpo com ingredientes certificados. Aprenda a cuidar da pele de forma consciente e eficaz."
-    />
-    <!-- SEO -->
-    <meta name="author" content="Susana Soares Silva"/>
-    <meta name="keywords" content="cosmética natural, cursos online, fórmulas cosméticas, DaJoana, cosmética artesanal, ingredientes naturais, workshops cosméticos"/>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph para redes sociais -->
-    <meta
-      property="og:title" content="DaJoana | Cursos de Cosmética Natural Online"/>
-    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana."
-    />
-    <meta property="og:image" content="imagem/VECTOR SVG PDF JPEG/VSMALL JPEG HIRES.jpg"/>
-    <!-- usa uma imagem relevante -->
-    <meta property="og:url" content="https://www.dajoana.com"/>
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- SEO base -->
+    <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+    <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+    <meta name="author" content="Susana Soares Silva">
+    <meta name="copyright" content="DaJoana Cosmética Natural">
+    <link rel="canonical" href="https://www.dajoana.com/" />
+
+        <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+    <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
+    <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
+    <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
+    <meta property="og:url" content="https://www.dajoana.com" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+        <!-- Twitter Cards (também usado por Telegram e outros) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+    <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+    <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="fx js">
     <!-- Este ícone só aparece em telas pequenas -->
     <div class="logo-icon md-hide">
       <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
-    
-      <!-- Ícone hamburguer -->
-      <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
+                <!-- Ícone hamburguer -->
+        <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-        </svg>
-      </a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+        </a>
     </div>
 
     
 
-    <header class="header" data-paralax data-p-velocity="0.5">  
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
       <div class="container">
-          <!-- Este aparece só em telas médias e grandes -->
+                <!-- Este aparece só em telas médias e grandes -->
         <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-          <nav class="header-nav ">               
+          <nav class="header-nav" role="navigation">               
             <ul id="header__navList" class="header__navList" aria-hidden="true">
               <li><a href="index.html">Home</a></li>
               <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
               <li><a href="#footer__socialLinks">Contactos</a></li>
               <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
               <li><a href="/blog/">Blog</a></li>
@@ -69,50 +80,41 @@
 
 
     <main>
-      <section class="heroBanner">
-        <div class="maxWidth">
-          <h1 class="heroBanner_title">Curso Cosméticos Corporais</h1>
-
-          <h2 class="heroBanner_subtitle">
-            Aprenda a criar loções, bálsamos, manteigas e esfoliantes corporais
-            com ingredientes naturais e certificados. <br />
-            Este módulo prático ensina a formular produtos que nutrem, protegem
-            e respeitam a pele, promovendo o bem-estar e a sustentabilidade.
-          </h2>
-          <a href="https://www.udemy.com/course/cosmeticos-corporais/?referralCode=929F5809C49A1EEEDCA3" class="heroBanner_btn">Saiba Mais</a>
+      <section class="container heroBanner">
+        <div class = "maxWidth">
+          <div class="heroBanner_content"> 
+            <h1 class="heroBanner_title">Cosméticos Corporais</h1>
+            <h2 class="heroBanner_subtitle">
+              Aprenda a criar loções, bálsamos, manteigas e esfoliantes corporais naturais.  
+              Módulo prático para formular produtos que nutrem, protegem e respeitam a pele com sustentabilidade.
+            </h2>
+            <a href="https://www.udemy.com/course/cosmeticos-corporais/?referralCode=929F5809C49A1EEEDCA3" class="heroBanner_btn">Saiba Mais</a>
+          </div>
         </div>
       </section>
 
       <section class="middleContent">
-
         <div class="maxWidth">
           <div class="row">
             <article class="col col-sm-12 col-md-6 col-xl-3">
-              <a href="#">
-                <span class="fa-solid fa-graduation-cap"></span>
+              <a href="#"><span class="fa-solid fa-graduation-cap"></span>
                 <div class="card_content">
-                  <h3 class="middleContent_title">A pele do corpo tem necessidades diferentes da pele do rosto</h3>
+                  <h3 class="middleContent_title">A pele do corpo precisa de cuidados específicos</h3>
                   <p class="middleContent_text">
-                    Muitas vezes seja esquecida, a pele do corpo também merece cuidados específicos. 
-                    Ela é, em geral, mais espessa, com diferentes níveis de oleosidade e exposição a fatores como fricção, sol, frio ou desidratação. 
-                    Aprender a reconhecer estas necessidades é fundamental para formular produtos eficazes, como loções, manteigas, exfoliantes e óleos corporais que realmente nutrem e cuidam da pele de forma adequada.
+                    A pele corporal é mais espessa e sofre com fricção, clima e desidratação.  
+                    Reconhecer essas necessidades é essencial para criar loções, manteigas, esfoliantes e óleos corporais naturais que nutrem e protegem de forma eficaz.
                   </p>
-
                 </div>
-
-
               </a>
             </article>
 
             <article class="col col-sm-12 col-md-6 col-xl-3">
-              <a href="#">
-                <span class="fa-solid fa-kitchen-set"></span>
+              <a href="#"><span class="fa-solid fa-kitchen-set"></span>
                 <div class="card_content">
-
-                  <h3 class="middleContent_title">Ingredientes vegetais fazem toda a diferença na hidratação e proteção</h3>
+                  <h3 class="middleContent_title">Ingredientes vegetais para hidratar e proteger a pele</h3>
                   <p class="middleContent_text">
-                    A cosmética natural oferece-nos uma gama incrível de ingredientes como manteigas vegetais, óleos prensados a frio, ceras e extratos botânicos que ajudam a proteger a barreira cutânea, prevenir o ressecamento e suavizar a pele. 
-                    No curso, mostramos como selecionar e combinar esses ingredientes com consciência, para criar fórmulas que respeitam o corpo e são um verdadeiro ritual de bem-estar.
+                    Manteigas, óleos prensados a frio, ceras e extratos botânicos fortalecem a barreira cutânea e evitam o ressecamento.  
+                    No curso, aprende a combinar esses ingredientes naturais para criar fórmulas seguras e eficazes.
                   </p>
                 </div>
               </a>
@@ -123,11 +125,10 @@
                 <span class="fa-solid fa-explosion"></span>
                 <div class="card_content">
 
-                  <h3 class="middleContent_title">Os produtos corporais também podem ser terapêuticos</h3>
+                  <h3 class="middleContent_title">Produtos corporais naturais com benefícios terapêuticos</h3>
                   <p class="middleContent_text">
-                    Ao formular produtos para o corpo, não estamos apenas a criar algo funcional, estamos a oferecer momentos de cuidado, relaxamento e conexão com o nosso corpo. 
-                    Desde bálsamos pós-banho até exfoliantes sensoriais com óleos essenciais, podemos incorporar propriedades calmantes, anti-inflamatórias, drenantes ou tonificantes. 
-                    Esta abordagem torna os cosméticos naturais para o corpo ainda mais especiais e personalizados.
+                    Cosméticos corporais podem ir além da hidratação: oferecem relaxamento e bem-estar.  
+                    Ao usar óleos essenciais e ativos naturais, é possível criar bálsamos e esfoliantes com efeitos calmantes, anti-inflamatórios e tonificantes.
                   </p>
                 </div>
               </a>
@@ -137,11 +138,10 @@
               <a href="#">
                 <span class="fa-solid fa-people-arrows"></span>
                 <div class="card_content">
-
-                  <h3 class="middleContent_title">Saber conservar bem os produtos corporais é essencial para a sua segurança</h3>
+                  <h3 class="middleContent_title">Conservação segura dos cosméticos corporais naturais</h3>
                   <p class="middleContent_text">
-                    Como costumam ser produtos aplicados em áreas maiores e com maior contacto com as mãos, os cosméticos corporais precisam de cuidados extra com a conservação. 
-                    Entender os diferentes tipos de conservantes naturais e como aplicá-los corretamente é crucial para garantir fórmulas seguras, estáveis e eficazes ao longo do tempo, sem comprometer a saúde da pele.
+                    Cosméticos corporais exigem conservação cuidadosa devido ao uso frequente.  
+                    Conhecer conservantes naturais e aplicá-los corretamente garante fórmulas estáveis, seguras e eficazes sem prejudicar a pele.
                   </p>
                 </div>
               </a>

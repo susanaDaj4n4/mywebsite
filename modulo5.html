@@ -3,24 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
     <title>DaJoana | Cursos de Cosmética Natural Online - Crie os Seus Próprios Cosméticos</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="logo_usado/favicon-32x32.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- SEO -->
+    <!-- SEO base -->
+    <meta name="description" content="Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural."/>
+    <meta name="keywords" content="cosmética natural, cursos de cosmética, cosméticos veganos, cursos online, Portugal, DaJoana">
+    <meta name="author" content="Susana Soares Silva">
+    <meta name="copyright" content="DaJoana Cosmética Natural">
+    <link rel="canonical" href="https://www.dajoana.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
     <meta property="og:title" content="DaJoana | Cursos de Cosmética Natural Online" />
     <meta property="og:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana." />
-    <meta property="og:image" content="logo_usado/og-image.jpg" />
-    <!-- Use uma imagem relevante, de preferência com 1200x630px para boa resolução -->
+    <meta property="og:image" content="https://www.dajoana.com/imagem/social-share.jpg" />
     <meta property="og:url" content="https://www.dajoana.com" />
     <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="Aprenda a usar argilas, conservantes naturais e ingredientes seguros em cosmética natural. Entenda as funções, aplicações e critérios de escolha com base em certificações."
-    />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Cards (também usado por Telegram e outros) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DaJoana | Cursos de Cosmética Natural Online">
+    <meta name="twitter:description" content="Aprenda a criar os seus próprios cosméticos naturais com os cursos online, fórmulas gratuitas e workshops da DaJoana.">
+    <meta name="twitter:image" content="https://www.dajoana.com/imagem/social-share.jpg">
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -28,66 +45,53 @@
 
   
   <body class="fx js">
+    <div class="logo-icon md-hide">
+      <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
     
-      <!-- Este ícone só aparece em telas pequenas -->
-      <div class="logo-icon md-hide">
-        <img src="logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
-    
-        <!-- Ícone hamburguer -->
-        <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
+      <!-- Ícone hamburguer -->
+      <a href="#" id="hamburguer-menu"  aria-expanded="false" class="menu-icon" >
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-          </svg>
-        </a>
-      </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+        </svg>
+      </a>
+    </div>
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
+      <div class="container">
+        <!-- Este aparece só em telas médias e grandes -->
+        <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
 
-    
-
-      <header class="header" data-paralax data-p-velocity="0.5">  
-        <div class="container">
-          <!-- Este aparece só em telas médias e grandes -->
-          <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
-
-            <nav class="header-nav" role="navigation">               
-              <ul id="header__navList" class="header__navList" aria-hidden="true">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
-                <li><a href="#footer">Contactos</a></li>
-                <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
-                <li><a href="/blog/">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="header-nav" role="navigation">               
+            <ul id="header__navList" class="header__navList" aria-hidden="true">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
+              <li><a href="#footer__socialLinks">Contactos</a></li>
+              <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"><span>livro d'avó</span></a></li>
+              <li><a href="/blog/">Blog</a></li>
+            </ul>
+          </nav>
         </div>
-      </header>
+      </div>
+    </header>
     
 
     <main>
       <section class="container heroBanner">
         <div class="maxWidth">
             <div class="heroBanner_content">         
-              <div class="heroBanner_iconPlay">
-                <i class="fa-brands fa-leanpub fa"></i>
-              </div>
               <h1 class="heroBanner_title">
-                Argilas, Conservantes e Ingredientes<br> para Cosmética Natural Segura e Eficaz
+                Argilas, Conservantes e Ingredientes Cosméticos
               </h1>
-
               <h2 class="heroBanner_subtitle">
-                Conheça os ingredientes essenciais para formular cosméticos naturais
-                  com confiança. <br>Este módulo explora as propriedades das argilas, os
-                conservantes permitidos por certificadoras e os ingredientes
-                cosméticos naturais mais usados em formulações eficazes e seguras.
+                Descubra os ingredientes essenciais para formular cosméticos naturais seguros e eficazes.  
+                Aprenda sobre argilas, conservantes certificados e ingredientes naturais mais usados.
               </h2>
               <a href="https://www.udemy.com/course/argilas-ingredientes-conservantes/?referralCode=AD60D3709F66EAD6BC41" class="heroBanner_btn">Saiba Mais</a>
-
             </div>
         </div>
       </section>
       <section class="middleContent">
-
         <div class="maxWidth">
           <div class="row">
             <article class="col col-sm-12 col-md-6 col-xl-3">
@@ -158,39 +162,36 @@
 
 
       <section class="mainContent">
-        <div class="row maxWidth">
-          <h2 class="mainContent_title">Argilas, Ingredientes e Conservantes</h2>
-            <div class="contentGrid">
-            
-              <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
-                <div class="mainContent_container">
-                  <div class="mainContent_img">
-                    <img src="image/mascara_rosto_dajoana.jpg" alt="Argilas na Cosmética Natural" />
-                  </div>
-
-                  <div class="mainContent_text">
-                    <h3 class="mainContent_title">Argilas</h3>
-                      <div>
-                        <ul class="mainContent_list__cursos">
-                          <li>Aula 1 - Introdução ao Módulo Argilas na Cosmética</li>
-                          <li>Aula 2 - Propriedades e Funções na pele</li>
-                          <li>Aula 3 - Propriedades e Funções na pele II</li>
-                        </ul>
-                      </div>
-                  </div>
+        <h2 class="mainContent_title">Argilas, Ingredientes e Conservantes</h2>
+          <div class="contentGrid">
+            <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
+              <div class="mainContent_container">
+                <div class="mainContent_img">
+                  <img src="image/mascara_rosto_dajoana.jpg" alt="Argilas na Cosmética Natural" />
                 </div>
+                <div class="mainContent_text">
+                  <!-- <h3 class="mainContent_title">Argilas</h3> -->
+                    <div>
+                      <ul class="mainContent_list__cursos">
+                        
+                        <li>Aula 1 - Introdução</li>
+                        <li>Aula 2 - Propriedades e Funções na pele</li>
+                        <li>Aula 3 - Propriedades e Funções na pele II</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
               
-              </article>
+            </article>
 
-              <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
-                <div class="mainContent_container">
-                  <div class="mainContent_img">
-                    <img src="image/macerado_DaJoana.jpg" alt="Ingredientes Cosméticos"/>
+            <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
+              <div class="mainContent_container">
+                <div class="mainContent_img">
+                  <img src="image/macerado_DaJoana.jpg" alt="Ingredientes Cosméticos"/>
                 </div>
 
                 <div class="mainContent_text">
-                  <h3 class="mainContent_title">Ingredientes Cosméticos</h3>
-
+                  <!-- <h3 class="mainContent_title">Ingredientes Cosméticos</h3> -->
                   <ul class="mainContent_list__cursos">
                     <li>Aula 1 - Matérias Primas e Fichas Técnicas</li>
                     <li>Aula 2 - Ingredientes cosméticos (Ebook)
@@ -214,18 +215,18 @@
                     <li>Aula 8 - Surfactantes</li>
                   </ul>
                 </div>
+              </div>
             
-              </article>
+            </article>
 
-              <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
+            <article class="mainContent_article col-md-6 col-sm-12 col-xl-6">
                 <div class="mainContent_container">
                   <div class="mainContent_img">
                     <img src="image/conservante_Dajoana.jpg"alt="Conservantes usados na cosmética natural"/>
                   </div>
 
-                  <div class="mainContent_text_cursos">
-                    <h3 class="mainContent_title">Conservantes</h3>
-
+                  <div class="mainContent_text">
+                    <!-- <h3 class="mainContent_title">Conservantes</h3> -->
                     <ul class="mainContent_list__cursos">
                       <li>Aula 1 - Introdução</li>
                       <li>Aula 2 - Guia de Conservantes Naturais</li>
@@ -237,9 +238,8 @@
                     </ul>
                   </div>
                 </div>
-              </article>
-            </div>
-        </div>
+            </article>
+          </div>
       </section>  
       <section class="section_btns">
         <div class="btnContainer">
