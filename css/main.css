@@ -439,22 +439,26 @@ a {
 }
 
 .last-articles__title {
-  background-color: var(--secondary-color);
-  margin: 1rem;
-  padding: 5px 0;
+  /* background-color: var(--secondary-color); */
+  margin: 2rem;
+  /* padding: 0 1rem; */
 }
 
 .last-articles {
   text-align: center;
   align-items: center;
+  padding: 0;
 }
 
 .last-articles__title h2 {
-  font-size: 1.5rem;
-  color: var(--special-color);
+  font-size: 2rem;
+  color: var(--secondary-color);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 900;
   border-radius: 5px;
+}
+.last-articles container {
+  padding: 2rem;
 }
 
 .last-articles__thumbs {
@@ -475,12 +479,13 @@ a {
 }
 
 .testimonials {
-  margin: 1rem;
+  /* margin: 1rem; */
+  /* margin-top: 1rem; */
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
   background-color: var(--secondary-color);
-  padding: 40px 0 20px;
+  /* padding: 1rem 0; */
   width: 100%;
   border-radius: 5px;
 }
@@ -489,6 +494,7 @@ a {
   font-size: 2rem; /* tamanho legível e chamativo */
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
+  margin-top: 1rem;
   margin-bottom: 2rem; /* espaço entre o título e o carrossel */
   line-height: 1.4;
   font-weight: 600; /* ou bold, se preferires */
@@ -521,6 +527,7 @@ a {
   align-items: center;
   scroll-snap-align: center;
   padding: 1rem 1rem;
+  width: 100%;
 }
 
 .testimonials__carroussel__wrapper figure img {
@@ -629,17 +636,18 @@ figure img {
 }
 
 .footer {
-  margin: 1.5rem;
+  margin: 1.5rem 1rem;
   background: var(--secondary-color);
   color: var(--special-color);
   text-align: center;
-  padding: 2em;
+  /* padding: 2em; */
   /* margin-top: 2em; */
   border-radius: 5;
 }
 
 .footer_container {
-  margin: 0;
+  margin-top: 3rem;
+  /* margin: 1.5rem; */
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
@@ -647,11 +655,13 @@ figure img {
 }
 
 .footer p {
+  font-size: 1.5rem;
+}
+.footer a {
   font-size: 1rem;
 }
-
 .footer__socialLinks {
-  margin: 1.5rem auto;
+  /* margin: 1.5rem auto; */
   list-style-type: none;
   display: flex;
 
@@ -662,7 +672,7 @@ figure img {
 
 .footer__socialLinks i {
   font-size: 3rem; /* Ajusta aqui o tamanho desejado */
-  margin: 0 0.5rem; /* Espaçamento horizontal entre ícones */
+  margin: 0 2rem; /* Espaçamento horizontal entre ícones */
 }
 
 .footer__socialLinks i:hover {
