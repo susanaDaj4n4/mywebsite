@@ -479,7 +479,6 @@ a {
 }
 
 .testimonials {
-  margin: 1rem;
   /* margin-top: 1rem; */
   display: flex;
   flex-direction: column;
@@ -490,12 +489,21 @@ a {
   border-radius: 5px;
 }
 
+.testimonials_container {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
 .testimonials_container h2 {
   font-size: 2rem; /* tamanho legível e chamativo */
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
   margin-top: 1rem;
-  margin-bottom: 2rem; /* espaço entre o título e o carrossel */
+  margin-bottom: 0.5rem; /* espaço entre o título e o carrossel */
   line-height: 1.4;
   font-weight: 600; /* ou bold, se preferires */
 }
@@ -671,7 +679,7 @@ figure img {
 }
 
 .footer__socialLinks i {
-  font-size: 3rem; /* Ajusta aqui o tamanho desejado */
+  font-size: 2rem; /* Ajusta aqui o tamanho desejado */
   margin: 0 2rem; /* Espaçamento horizontal entre ícones */
 }
 
@@ -797,7 +805,8 @@ figure img {
     min-height: 100vh; /* ocupa toda a altura da tela */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centra verticalmente */
+    justify-content: center;
+    margin-top: 1rem; /* centra verticalmente */
   }
 
   .testimonials_container {
