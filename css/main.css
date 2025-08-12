@@ -225,10 +225,11 @@ a {
 .heroBanner_title {
   color: var(--secondary-color);
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .heroBanner_subtitle {
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   color: var(--secondary-color);
   line-height: 1.5em;
   text-shadow: 0.5px 0.5px 1px rgba(75, 109, 76, 0.3);
@@ -416,7 +417,7 @@ a {
 .mainContent p {
   color: var(--primary-color);
   line-height: 1.5em;
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 
 .mainContent .row {
@@ -465,7 +466,7 @@ a {
 }
 
 .testimonials_container h2 {
-  /* font-size: 2rem;  */
+  font-size: 2rem;
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
   /* margin-top: 1rem; */
@@ -562,7 +563,7 @@ figure img {
 }
 
 .last-articles__title h2 {
-  /* font-size: 2rem; */
+  font-size: 2rem;
   color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -606,7 +607,7 @@ figure img {
 }
 
 .books__card__content h3 {
-  /* font-size: 1.25rem; */
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--special-color);
   line-height: 1.4;
