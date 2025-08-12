@@ -1351,10 +1351,19 @@ figure img {
 .curso_btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 .curso_btn:hover {
   background-color: var(--special-color);
   color: var(--primary-color);
+}
+.curso_btn:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
 }
 
 .contentGrid {
