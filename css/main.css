@@ -67,7 +67,7 @@ a {
   box-sizing: border-box;
 }
 .container {
-  margin: 1rem 1.5rem;
+  margin: 1.5rem;
   /* width: 100vw; */
   max-width: 100%;
   padding-top: 6rem;
@@ -404,11 +404,11 @@ a {
 }
 
 .mainContent_title {
-  margin-top: 1rem;
+  margin: 1.5rem;
   color: var(--primary-color);
   text-transform: uppercase;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .mainContent p {
@@ -438,71 +438,35 @@ a {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.last-articles__title {
-  /* background-color: var(--secondary-color); */
-  margin: 2rem;
-  /* padding: 0 1rem; */
-}
-
-.last-articles {
-  text-align: center;
-  align-items: center;
-  padding: 0;
-}
-
-.last-articles__title h2 {
-  font-size: 2rem;
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  font-weight: 900;
-  border-radius: 5px;
-}
-.last-articles container {
-  padding: 2rem;
-}
-
-.last-articles__thumbs {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: auto;
-  row-gap: 0;
-  column-gap: 0;
-  border-radius: 5px;
-}
-
-.last-articles__thumbs img {
-  display: block;
-  width: 100%;
-  height: 200px; /* ou qualquer valor desejado */
-  object-fit: cover;
-}
-
 .testimonials {
-  /* margin-top: 1rem; */
+  margin-top: 0.5rem;
+  /* margin-right: 1.5rem;
+  margin-left: 0; */
+
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
   background-color: var(--secondary-color);
-  /* padding: 1rem 0; */
+  padding: 1rem 0;
   width: 100%;
   border-radius: 5px;
 }
 
 .testimonials_container {
   margin: 0;
+  margin-left: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
+  /* padding: 1em; */
 }
 
 .testimonials_container h2 {
   font-size: 2rem; /* tamanho legível e chamativo */
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 0.5rem; /* espaço entre o título e o carrossel */
   line-height: 1.4;
   font-weight: 600; /* ou bold, se preferires */
@@ -512,7 +476,7 @@ a {
   display: block; /* quebra para linha abaixo */
   font-weight: 300; /* mais fino para dar contraste */
   font-size: 1.2rem; /* mais pequeno que o título principal */
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   color: var(--special-color); /* cor suave ou secundária */
 }
 
@@ -578,9 +542,49 @@ figure {
 }
 figure img {
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 4rem;
+  width: 4rem;
   /* object-fit: cover; */
+}
+
+.last-articles__title {
+  /* background-color: var(--secondary-color); */
+  margin: 2rem;
+  /* padding: 0 1rem; */
+}
+
+.last-articles {
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.last-articles__title h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.last-articles container {
+  padding: 2rem;
+}
+
+.last-articles__thumbs {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  row-gap: 0;
+  column-gap: 0;
+  border-radius: 5px;
+}
+
+.last-articles__thumbs img {
+  display: block;
+  width: 100%;
+  height: 200px; /* ou qualquer valor desejado */
+  object-fit: cover;
 }
 
 .books,
@@ -700,10 +704,10 @@ figure img {
 
 @media (max-width: 48em) {
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   h3 {
@@ -785,28 +789,28 @@ figure img {
     text-align: center;
   }
   .mainContent_title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .mainContent p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .mainContent_img,
   .mainContent_text {
-    width: 100%;
-    flex: 1 1 100%;
+    width: 80%;
+    flex: 1 1 80%;
   }
 
   .mainContent_article {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 80%;
+    max-width: 80%;
   }
   .testimonials {
     min-height: 100vh; /* ocupa toda a altura da tela */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1rem; /* centra verticalmente */
+    /* margin-top: 1.5rem; */
   }
 
   .testimonials_container {
@@ -890,7 +894,7 @@ figure img {
     background-size: cover; /* cobre toda a área, mesmo que corte um pouco */
     background-position: center center; /* centra a imagem */
     background-repeat: no-repeat;
-    margin-top: 250px;
+    margin-top: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -972,7 +976,7 @@ figure img {
     display: flex;
     flex-direction: column;
     gap: var(--default-gap);
-    margin-top: 10px;
+    margin-top: 1.5rem;
   }
 
   .mainContent_img {
@@ -1162,7 +1166,6 @@ figure img {
   text-align: center;
   font-size: 2em;
   color: var(--primary-text);
-  margin-bottom: 1em;
 }
 .newsletterForm {
   display: flex;
@@ -1408,4 +1411,31 @@ figure img {
 
 .blog-post-readmore:hover {
   text-decoration: underline;
+}
+
+#cookie-consent {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+#cookie-consent button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+#cookie-consent button:hover {
+  background-color: #45a049;
 }
