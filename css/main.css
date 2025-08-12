@@ -228,7 +228,7 @@ a {
 }
 
 .heroBanner_subtitle {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   color: var(--secondary-color);
   line-height: 1.5em;
   text-shadow: 0.5px 0.5px 1px rgba(75, 109, 76, 0.3);
@@ -238,17 +238,19 @@ a {
 .heroBanner_btn {
   background-color: var(--special-color);
   color: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
   display: inline-block;
-  font-weight: 600;
+  font-weight: bold;
 
-  font-size: 1rem;
-  padding: 0.7em 1.5em;
+  font-size: 1.4rem;
+  padding: 0.8rem 2rem;
   transition: background-color 0.3s ease;
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
+
+  margin-top: 1.5rem;
 }
 
 .heroBanner_btn:hover {
@@ -259,7 +261,7 @@ a {
 .btn {
   background-color: var(--secondary-color);
   margin-top: 1.5rem;
-  color: #f6f6f6;
+  color: var(--special-color);
   border-radius: 4px;
   font-size: 1.4rem;
   text-decoration: none;
@@ -414,7 +416,7 @@ a {
 .mainContent p {
   color: var(--primary-color);
   line-height: 1.5em;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .mainContent .row {
@@ -463,7 +465,7 @@ a {
 }
 
 .testimonials_container h2 {
-  font-size: 2rem; /* tamanho legível e chamativo */
+  /* font-size: 2rem;  */
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
   /* margin-top: 1rem; */
@@ -475,7 +477,7 @@ a {
 .testimonials_container h2 .title--thin {
   display: block; /* quebra para linha abaixo */
   font-weight: 300; /* mais fino para dar contraste */
-  font-size: 1.2rem; /* mais pequeno que o título principal */
+  font-size: 1.2rem;
   /* margin-top: 0.5rem; */
   color: var(--special-color); /* cor suave ou secundária */
 }
@@ -560,7 +562,7 @@ figure img {
 }
 
 .last-articles__title h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -604,7 +606,7 @@ figure img {
 }
 
 .books__card__content h3 {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 600;
   color: var(--special-color);
   line-height: 1.4;
@@ -1344,6 +1346,15 @@ figure img {
 .heroBanner_btn:focus {
   outline: 3px solid var(--special-color);
   outline-offset: 2px;
+}
+
+.curso_btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.curso_btn:hover {
+  background-color: var(--special-color);
+  color: var(--primary-color);
 }
 
 .contentGrid {
