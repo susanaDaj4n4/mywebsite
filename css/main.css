@@ -789,21 +789,21 @@ figure img {
     text-align: center;
   }
   .mainContent_title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .mainContent p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .mainContent_img,
   .mainContent_text {
-    width: 80%;
-    flex: 1 1 80%;
+    width: 100%;
+    flex: 1 1 100%;
   }
 
   .mainContent_article {
-    flex: 1 1 80%;
-    max-width: 80%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
   .testimonials {
     min-height: 100vh; /* ocupa toda a altura da tela */
@@ -1438,4 +1438,8 @@ figure img {
 
 #cookie-consent button:hover {
   background-color: #45a049;
+}
+.link-cookies {
+  color: #4caf50;
+  text-decoration: underline;
 }
