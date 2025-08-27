@@ -590,6 +590,10 @@ figure img {
   object-fit: cover;
 }
 
+.books .h2 {
+  font-size: 2rem;
+  color: var(--primary-text);
+}
 .books,
 .books__list {
   padding: 1.5rem;
@@ -601,6 +605,7 @@ figure img {
 }
 
 .books__card__content {
+  color: var(--primary-text);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -609,7 +614,7 @@ figure img {
 .books__card__content h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--special-color);
+  color: var(--primary-text);
   line-height: 1.4;
   margin: 0;
 }
@@ -706,17 +711,6 @@ figure img {
 }
 
 @media (max-width: 48em) {
-  h1 {
-    font-size: 1rem;
-  }
-  h2 {
-    font-size: 0.75rem;
-  }
-
-  h3 {
-    font-size: 0.5rem;
-  }
-
   /* Logo grande escondido */
   .logo-icon__logo {
     display: none !important;
@@ -823,7 +817,7 @@ figure img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: 1.5rem; */
+    padding: 0;
   }
 
   .testimonials_container {
@@ -831,7 +825,7 @@ figure img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   .testimonials__carroussel__wrapper figure img {
