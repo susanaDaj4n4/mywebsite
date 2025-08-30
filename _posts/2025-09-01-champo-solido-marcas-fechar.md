@@ -13,42 +13,20 @@ tags:
   - sáeco
   - DIY
   - curso
+  - Angola
+  - Brasil
+  - Portugal
+  - Macau
+  - Moçambique
+  - Cabo Verde
+  - São Tomé e Principe
+  - Guiné
 image: /assets/imagens/marcas-fechar.png
 author: Susana Soares Silva
 description: 'Descubra por que algumas marcas de champô sólido portuguesas estão a fechar, o que isso revela e como fazer um champô sólido natural em casa.'
 meta:
-  og:title: "Por que estão a fechar marcas de champô sólido em Portugal?"
-  og:description: "Entenda o contexto real por trás desses encerramentos e aprenda como criar um champô sólido verdadeiramente natural."
-  og:image: /assets/imagens/talco_Dajoana.jpg
----
----
-layout: post
-title: "Por que marcas de champô sólido estão a fechar em Portugal, Brasil e Angola?"
-date: 2025-09-01
-categories: blog
-permalink: /blog/champo-solido-marcas-fechar/
-tags:
-  cosmética natural
-  champô sólido
-  cosméticos naturais
-  saúde da pele
-  beleza consciente
-  DIY
-  curso
-  Angola
-  Brasil
-  Portugal
-  Macau
-  Moçambique
-  Cabo Verde
-  São Tomé e Principe
-  Guiné
-image: /assets/imagens/marcas-fechar.png
-author: Susana Soares Silva
-description: "Análise aprofundada dos desafios do mercado de champô sólido nos países lusófonos e como é possível criar um produto natural e eficaz com facilidade em casa."
-meta:
-  og:title: "Por que marcas de champô sólido estão a fechar em Portugal, Brasil e Angola?"
-  og:description: "Com dados reais dos mercados lusófonos, mostra como a cosmética natural enfrenta obstáculos e como aprender a formulá-la em casa é uma excelente resposta."
+  og:title: 'Por que estão a fechar marcas de champô sólido em Portugal?'
+  og:description: 'Entenda o contexto real por trás desses encerramentos e aprenda como criar um champô sólido verdadeiramente natural.'
   og:image: /assets/imagens/talco_Dajoana.jpg
 ---
 
@@ -73,7 +51,8 @@ Com população projetada para alcançar **~47 milhões até 2060** :contentRefe
 
 ## Por que algumas marcas não conseguem sobreviver?
 
-### Fatores principais:
+### Fatores principais
+
 - **Concorrência intensa e margens apertadas**: A produção artesanal, os custos com ingredientes certificados e as próprias certificações tornam o modelo de negócio vulnerável comparando com os retalhistas com produtos "semelhantes" mais baratos.
 - **Dificuldade de educar o consumidor**: O público pode confundir “natural” com “marketing verde”. Sem o entendimento profundo, a fórmula verdadeira não ganha tração.
 - **Segmento de cuidados premium**: Logística, marketing digital e distribuição em múltiplos países exigem recursos e escala que muitas marcas ainda não têm.
@@ -102,11 +81,10 @@ Fazer champô sólido em casa com apoio de um curso ou ebook com o passo a passo
 
 ### Fontes consultadas
 
-- Portugal: faturação de 1 346 MM€, crescimento de +7,03 %, consumo per capita 126 €/ano, cabelo +7,8 % :contentReference[oaicite:8]{index=8}  
-- Beauty & Personal Care em Portugal: €2 058 M em 2025, CAGR 1,58 %, vendas online 25,4 % :contentReference[oaicite:9]{index=9}  
-- Cosmética natural em Portugal: percepção crescente e oportunidades :contentReference[oaicite:10]{index=10}  
-- Brasil: R$ 173,4 bilhões em 2024 (+10,3 %) :contentReference[oaicite:11]{index=11}; cosmética natural US$ 48 bilhões até 2025 :contentReference[oaicite:12]{index=12}; lançamentos naturais +23 % (2018–2023) :contentReference[oaicite:13]{index=13}; CAGR 6,97 % até 2027 + US$ 4,72 bilhões :contentReference[oaicite:14]{index=14}  
-- Angola: população prevista até 47 milhões, FILDA como vitrine comercial :contentReference[oaicite:15]{index=15}  
+- Portugal: faturação de 1 346 MM€, crescimento de +7,03 %, consumo per capita 126 €/ano, cabelo +7,8 % :contentReference[oaicite:8]{index=8}
+- Beauty & Personal Care em Portugal: €2 058 M em 2025, CAGR 1,58 %, vendas online 25,4 % :contentReference[oaicite:9]{index=9}
+- Cosmética natural em Portugal: percepção crescente e oportunidades :contentReference[oaicite:10]{index=10}
+- Brasil: R$ 173,4 bilhões em 2024 (+10,3 %) :contentReference[oaicite:11]{index=11}; cosmética natural US$ 48 bilhões até 2025 :contentReference[oaicite:12]{index=12}; lançamentos naturais +23 % (2018–2023) :contentReference[oaicite:13]{index=13}; CAGR 6,97 % até 2027 + US$ 4,72 bilhões :contentReference[oaicite:14]{index=14}
+- Angola: população prevista até 47 milhões, FILDA como vitrine comercial :contentReference[oaicite:15]{index=15}
 
 ---
-
