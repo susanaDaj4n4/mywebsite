@@ -3,25 +3,27 @@ layout: post
 title: Por que estão a fechar marcas de champô sólido em Portugal?
 date: 2025-09-01
 categories: blog
-permalink: /blog/champo-solido-marcas-fechar/
-tags:
-  - cosmética natural
-  - champô sólido
-  - cosméticos naturais
-  - saúde da pele
-  - beleza consciente
-  - sáeco
-  - DIY
-  - curso
-  - Angola
-  - Brasil
-  - Portugal
-  - Macau
-  - Moçambique
-  - Cabo Verde
-  - São Tomé e Principe
-  - Guiné
 image: /assets/imagens/marcas-fechar.png
+# permalink: /blog/champo-solido-marcas-fechar/
+tags:
+  [
+    cosmética natural,
+    champô sólido,
+    cosméticos naturais,
+    saúde da pele,
+    beleza consciente,
+    sáeco,
+    DIY,
+    curso,
+    Angola,
+    Brasil,
+    Portugal,
+    Macau,
+    Moçambique,
+    Cabo Verde,
+    São Tomé e Principe,
+    Guiné,
+  ]
 author: Susana Soares Silva
 description: 'Descubra por que algumas marcas de champô sólido portuguesas estão a fechar, o que isso revela e como fazer um champô sólido natural em casa.'
 meta:
