@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Como Criar Cosméticos Naturais em Casa: Guia Completo 🌿'
-date: 2025-09-08
+date: 2025-09-07
 categories: blog
 image: /assets/imagens/faca_cosmeticos_DaJoana.jpg
 tags:
