@@ -379,14 +379,15 @@ a {
 } */
 .mainContent_img,
 .mainContent_text {
+  font-size: 1rem;
   width: 100%;
   flex: 1 1 100%;
   text-align: center;
 }
 .mainContent_img {
   width: 100%;
-  height: 15rem;
-  min-height: 18.75rem;
+  height: 1.5rem;
+  /* min-height: 18.75rem; */
   overflow: hidden;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -408,8 +409,8 @@ a {
   margin-top: 1rem;
   color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .mainContent p {
@@ -475,7 +476,7 @@ a {
 }
 
 .testimonials {
-  margin: 1rem;
+  /* margin: 1rem; */
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
@@ -489,7 +490,7 @@ a {
   font-size: 2rem; /* tamanho legível e chamativo */
   text-align: center; /* centra o título */
   color: var(--special-color); /* usa a tua variável de cor principal */
-  margin-bottom: 2rem; /* espaço entre o título e o carrossel */
+  margin-bottom: 1rem; /* espaço entre o título e o carrossel */
   line-height: 1.4;
   font-weight: 600; /* ou bold, se preferires */
 }
@@ -730,10 +731,15 @@ figure img {
     padding: 2rem;
   }
 
-  .mainContent_container_cursos {
+  .mainContent_article {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* .mainContent_container_cursos {
     flex-direction: column;
     text-align: center;
-  }
+  } */
 
   .mainContent_img,
   .mainContent_text {
@@ -750,10 +756,7 @@ figure img {
     width: auto;
     min-width: 200px;
   }
-  .mainContent_article {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+
   .testimonials {
     min-height: 100vh; /* ocupa toda a altura da tela */
     display: flex;
@@ -772,6 +775,30 @@ figure img {
   .testimonials__carroussel__wrapper figure img {
     width: 100%; /* em telas pequenas, pode ocupar mais */
     max-width: 100%;
+  }
+
+  .blog-post {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-post-image-link {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .blog-post-image {
+    width: 100%;
+    max-width: 300px; /* limita em telemóvel */
+  }
+
+  .blog-post-title-link {
+    font-size: 1.25rem; /* ~20px em mobile */
+  }
+
+  .blog-post-content p {
+    font-size: 1rem; /* ~16px em mobile */
   }
 }
 
@@ -914,7 +941,7 @@ figure img {
 
   .mainContent {
     padding: 2em;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   .mainContent .row {
@@ -938,7 +965,7 @@ figure img {
   }
 
   .mainContent_img {
-    height: 11.5rem; /* altura maior para desktop */
+    /* height: 11.5rem; */
   }
 
   .mainContent_img img {
@@ -953,13 +980,13 @@ figure img {
   .mainContent_title {
     text-transform: uppercase;
     color: var(--primary-color);
-    font-size: 1.25em;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2em;
   }
 
   .mainContent p {
-    font-size: inherit;
+    /* font-size: inherit; */
     line-height: 1.5em;
     color: var(--primary-color);
   }
@@ -1242,6 +1269,7 @@ figure img {
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
 }
+
 .mainContent_cursos {
   display: grid;
   gap: 2em;
@@ -1307,6 +1335,25 @@ figure img {
 .mainContent_list__cursos ul li {
   margin-bottom: 0.3rem;
   font-size: 0.95rem;
+}
+
+.blog-post-content p {
+  font-size: 1.125rem; /* ~18px, ótimo para leitura */
+  line-height: 1.6; /* mais espaçamento entre linhas */
+  color: #f6f6f6;
+}
+
+.blog-post-title-link {
+  font-size: 1.5rem; /* ~24px, ainda destacado mas não exagerado */
+  font-weight: 700;
+  color: #f6f6f6;
+}
+
+.blog-post-image {
+  width: 120px; /* mais contido */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Botões */
