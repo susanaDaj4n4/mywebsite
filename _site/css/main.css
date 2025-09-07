@@ -828,28 +828,17 @@ figure img {
     max-width: 100%;
   }
 
-  .blog-post {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .blog-post-image-link {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
   .blog-post-image {
-    width: 100%;
-    max-width: 300px; /* limita em telemóvel */
+    width: 150px;
+    max-width: none; /* override */
   }
 
   .blog-post-title-link {
-    font-size: 1.25rem; /* ~20px em mobile */
+    font-size: 2rem;
   }
 
   .blog-post-content p {
-    font-size: 1.8rem; /* ~16px em mobile */
+    font-size: 1.125rem; /* ligeiramente maior mas não exagerado */
   }
 
   .footer__socialLinks {
@@ -1356,25 +1345,37 @@ figure img {
 .mainContent_list__cursos ul li {
   margin-bottom: 0.3rem;
   font-size: 0.95rem;
-} 
+}
 
-.blog-post-content p {
-  font-size: 1.8rem;
-  line-height: 1.6; /* mais espaçamento entre linhas */
-  color: #f6f6f6;
+.blog-post {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-post-image-link {
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .blog-post-title-link {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #f6f6f6;
 }
 
-.blog-post-image {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+.blog-post-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f6f6f6;
 }
 
 /* Botões */
