@@ -12,7 +12,7 @@
       content="{% if page.description %}{{ page.description }}{% else %}Aprenda a criar cosméticos naturais com os nossos cursos online. Cosmética vegana, artesanal e feita por si. DaJoana - Cosmética Natural.{% endif %}"
     />
 
-    <!-- SEO Open Graph -->
+    <!-- Open Graph -->
     <meta
       property="og:title"
       content="{{ page.title | default: 'DaJoana Cosmética Natural' }}"
@@ -23,10 +23,11 @@
     />
     <meta
       property="og:image"
-      content="{{ page.image | default: '/imagem/banner-home.jpg' }}"
+      content="{{ page.image | default: '/imagem/social-share.jpg' }}"
     />
     <meta property="og:url" content="https://www.dajoana.com{{ page.url }}" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="{{ page.image | default: '/imagem/banner-home.jpg' }}"
+      content="{{ page.image | default: '/imagem/social-share.jpg' }}"
     />
 
     <!-- Favicon -->
@@ -50,23 +51,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQEFJWWX2X"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-GQEFJWWX2X');
-      </script>
 
     <!-- Estilos -->
     <link rel="stylesheet" href="/css/normalize.css" />
@@ -77,10 +68,15 @@
     <!-- Logo mobile -->
     <div class="logo-icon md-hide">
       <a href="/">
-        <img src="/logo_usado/SVG FILE.svg" alt="DaJoana Logo" width="150" />
+        <img src="/logo_usado/SVG-FILE.svg" alt="DaJoana Logo" width="150" />
       </a>
       <!-- Ícone hamburguer -->
-      <a href="#" id="hamburguer-menu" aria-expanded="false" class="menu-icon">
+      <button
+        id="hamburguer-menu"
+        aria-expanded="false"
+        class="menu-icon"
+        aria-label="Abrir menu"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -88,6 +84,7 @@
           stroke-width="1.5"
           stroke="currentColor"
           class="size-6"
+          aria-hidden="true"
         >
           <path
             stroke-linecap="round"
@@ -95,39 +92,37 @@
             d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
           />
         </svg>
-      </a>
+      </button>
     </div>
 
     <!-- Header -->
     <header class="header" data-paralax data-p-velocity="0.5">
       <div class="container">
-        <!-- Logo desktop -->
         <div class="logo-icon__logo sm-hide md-show">
-          <a href="/">
-            <img
-              src="/logo_usado/SVG FILE.svg"
-              class="top_header_logo"
-              alt="DaJoana Logo"
-              width="200"
-            />
-          </a>
+          <img
+            src="/logo_usado/SVG-FILE.svg"
+            class="top_header_logo"
+            alt="DaJoana Logo"
+            width="200"
+          />
         </div>
-
-        <!-- Navegação -->
-        <nav class="header-nav" role="navigation">
+        <nav class="header-nav">
           <ul id="header__navList" class="header__navList" aria-hidden="true">
             <li><a href="/">Home</a></li>
             <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/cursos.html" id="linkCursos">Cursos</a></li>
+            <li><a href="/cursos.html">Cursos</a></li>
             <li><a href="#footer__socialLinks">Contactos</a></li>
             <li>
-              <a
-                href="https://cosmeticaformacao.gumroad.com/l/livro-de-receitas-da-avo"
-                >Livro d'Avó</a
+              <a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"
+                ><span>livro da avó</span></a
               >
             </li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="https://www.youtube.com/@dajoanacosmeticanatural/">Vídeos</a></li>
+            <li>
+              <a href="https://www.youtube.com/@dajoanacosmeticanatural/"
+                >Vídeos</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -137,24 +132,45 @@
     <main class="container my-5">{{ content }}</main>
 
     <!-- Rodapé -->
-    <footer id="footer__socialLinks" class="footer" >
-        <div class="footer_container">
-          <p>&copy; 2025 DaJoana Cosmética Natural <br> Susana Silva</p>
-          <h3><a href="https://mailchi.mp/440da78f87dc/newsletter">Newsletter</a></h3>
-          <p>
-            <a href="https://ec.europa.eu/consumers/odr">Resolução de Litígios</a> | 
-            <a href="/politica-privacidade.html">Política de Privacidade</a> | 
-            <a href="/cookies.html">Política de Cookies</a></p>
-              <div class="social-icons">
-                <ul class="footer__socialLinks">
-                  <li><a href="https://www.instagram.com/dajoana_cosmeticaformacao/"><i class="fa-brands fa-square-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/@dajoanacosmeticanatural"><i class="fa-brands fa-youtube"></i></a></li>
-                  <li><a href="https://www.tiktok.com/@dajoana_cosmetica"><i class="fa-brands fa-tiktok"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/dajoanacosmetica"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-          </p>
+    <footer id="footer__socialLinks" class="footer">
+      <div class="footer_container">
+        <p>
+          &copy; 2025 DaJoana Cosmética Natural <br />
+          Susana Silva
+        </p>
+        <h3>
+          <a href="https://mailchi.mp/440da78f87dc/newsletter">Newsletter</a>
+        </h3>
+        <p>
+          <a href="https://ec.europa.eu/consumers/odr">Resolução de Litígios</a>
+          | <a href="/politica-privacidade.html">Política de Privacidade</a> |
+          <a href="/cookies.html">Política de Cookies</a>
+        </p>
+        <div class="social-icons">
+          <ul class="footer__socialLinks">
+            <li>
+              <a href="https://www.instagram.com/dajoana_cosmeticaformacao/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@dajoanacosmeticanatural"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@dajoana_cosmetica"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dajoanacosmetica"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
   </body>
 </html>
