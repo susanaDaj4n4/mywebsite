@@ -13,7 +13,7 @@
 }
 
 main {
-  padding-top: 5rem; /* espaço para o menu fixo */
+  padding-top: 5rem;
 }
 
 main img {
@@ -35,44 +35,41 @@ body {
 
 body {
   margin: 1.7rem auto;
-  font: 400 62.5% 'Playfair Display', sans-serif;
+  font: 400 1rem 'Playfair Display', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  background-color: #a3c68c;
+  background-color:var(--primary-color);
   color: var(--special-color);
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 a {
   text-decoration: none;
   color: var(--special-color);
-  font-size: 0.75rem;
+  font-size: 1.6rem;
 }
 
 .maxWidth {
-  max-width: 100%; /* ou 90% */
+  max-width: 100%; 
   margin: 0 auto;
-  /* padding: 0 1rem; */
   box-sizing: border-box;
 }
 .container {
   margin: 1.5rem;
-  /* width: 100vw; */
   max-width: 100%;
-  padding-top: 6rem;
-  padding-left: 1rem; /* espaçamento interno consistente */
-  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-left: 1rem; 
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -84,14 +81,13 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* garante que fica acima de outros elementos */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 1.75rem;
   box-sizing: border-box;
 }
 
-/* Ícone que aparece apenas em telas pequenas */
 .logo-icon.md-hide {
   display: flex;
 }
@@ -102,17 +98,15 @@ a {
 }
 
 .logo-icon__logo {
-  display: none; /* por padrão escondido */
+  display: none; 
   width: 10rem;
-  padding: 1.75rem; /* padding vertical e horizontal */
-  /* como o height não está definido, a altura é padding + conteúdo *
-  /* height: auto; */
+  padding: 1.75rem; 
 }
 
 .logo-icon__logo img {
-  width: 160%; /* Ocupa toda a largura do container */
-  height: auto; /* Mantém a proporção */
-  display: block; /* Remove espaço extra embaixo da imagem */
+  width: 160%; 
+  height: auto; 
+  display: block;
 }
 
 .logo-icon__logo--desktop {
@@ -130,7 +124,6 @@ a {
 }
 
 .header-nav {
-  /* width: 100vw; ocupa toda a largura visível */
   display: block;
   margin-left: 1rem;
   padding: 0;
@@ -161,9 +154,9 @@ a {
 }
 
 .header-nav a {
-  display: block; /* ocupa toda a área da <li> */
-  padding: 1rem 1.5rem; /* garante altura >= 44px e espaço lateral */
-  width: 100%; /* ocupa toda a largura */
+  display: block;
+  padding: 1rem 1.5rem; 
+  width: 100%;
   color: var(--special-color);
   text-decoration: none;
   transition: 0.5s ease;
@@ -225,13 +218,13 @@ a {
 .heroBanner_title {
   color: var(--secondary-color);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .heroBanner_subtitle {
-  font-size: 1.2rem;
+  font-size: 3rem;
   color: var(--secondary-color);
-  line-height: 1.5em;
+  line-height: 1.7;
   text-shadow: 0.5px 0.5px 1px rgba(75, 109, 76, 0.3);
   margin-bottom: 1rem;
 }
@@ -315,7 +308,7 @@ a {
 .middleContent_title {
   color: var(--secondary-color);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -327,7 +320,7 @@ a {
 
 .middleContent_text {
   color: var(--primary-text);
-  line-height: 1.5em;
+  line-height: 1.7;
   font-size: 1rem;
 }
 
@@ -410,14 +403,13 @@ a {
   margin: 1.5rem;
   color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 2.5rem;
-  /* margin-bottom: 1rem; */
+  font-size: 3rem;
 }
 
 .mainContent p {
   color: var(--primary-color);
-  line-height: 1.5em;
-  font-size: 2rem;
+  line-height: 1.7;
+  font-size: 1.6rem;
 }
 
 .mainContent .row {
@@ -466,21 +458,19 @@ a {
 }
 
 .testimonials_container h2 {
-  font-size: 2rem;
-  text-align: center; /* centra o título */
-  color: var(--special-color); /* usa a tua variável de cor principal */
-  /* margin-top: 1rem; */
-  margin-bottom: 0.5rem; /* espaço entre o título e o carrossel */
-  line-height: 1.4;
-  font-weight: 600; /* ou bold, se preferires */
+  font-size: 3rem;
+  text-align: center;
+  color: var(--special-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  font-weight: 600;
 }
 
 .testimonials_container h2 .title--thin {
-  display: block; /* quebra para linha abaixo */
-  font-weight: 300; /* mais fino para dar contraste */
-  font-size: 1.2rem;
-  /* margin-top: 0.5rem; */
-  color: var(--special-color); /* cor suave ou secundária */
+  display: block; 
+  font-weight: 300;
+  font-size: 3rem;
+  color: var(--special-color);
 }
 
 .testimonials__carroussel__wrapper {
@@ -551,9 +541,7 @@ figure img {
 }
 
 .last-articles__title {
-  /* background-color: var(--secondary-color); */
   margin: 2rem;
-  /* padding: 0 1rem; */
 }
 
 .last-articles {
@@ -563,7 +551,7 @@ figure img {
 }
 
 .last-articles__title h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -591,7 +579,7 @@ figure img {
 }
 
 .books .h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--primary-text);
 }
 .books,
@@ -612,10 +600,10 @@ figure img {
 }
 
 .books__card__content h3 {
-  font-size: 1.25rem;
+  font-size: 2.4rem;
   font-weight: 600;
   color: var(--primary-text);
-  line-height: 1.4;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -675,7 +663,7 @@ figure img {
 }
 
 .footer p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .footer a {
   font-size: 1rem;
@@ -796,10 +784,10 @@ figure img {
     text-align: center;
   }
   .mainContent_title {
-    font-size: 1.2rem;
+    font-size: 3rem;
   }
   .mainContent p {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .mainContent_img,
@@ -850,15 +838,15 @@ figure img {
   }
 
   .blog-post-title-link {
-    font-size: 1.25rem; /* ~20px em mobile */
+    font-size: 3rem; /* ~20px em mobile */
   }
 
   .blog-post-content p {
-    font-size: 1.5rem; /* ~16px em mobile */
+    font-size: 1.6rem; /* ~16px em mobile */
   }
   .post-content {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 1.6rem;
+    line-height: 1.7;
   }
 }
 
@@ -1015,7 +1003,7 @@ figure img {
   }
 
   .mainContent_img {
-    height: 11.5rem; /* altura maior para desktop */
+    height: 11.5rem;
   }
 
   .mainContent_img img {
@@ -1030,14 +1018,14 @@ figure img {
   .mainContent_title {
     text-transform: uppercase;
     color: var(--special-color);
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.2em;
   }
 
   .mainContent p {
-    font-size: 1rem;
-    line-height: 1em;
+    font-size: 1.6rem;
+    line-height: 1.7;
     color: var(--primary-color);
   }
 
@@ -1127,8 +1115,7 @@ figure img {
 
   /* Ajustes visuais */
   .middleContent article {
-    margin: 0; /* usa gap da row */
-    /* padding: 1rem; */
+    margin: 0; 
     background: #f9f9f9;
     border-radius: 8px;
     text-align: center;
@@ -1136,7 +1123,7 @@ figure img {
   }
 
   .middleContent_title {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
   }
 
@@ -1199,7 +1186,7 @@ figure img {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 2em;
+  font-size: 3rem;
   color: var(--primary-text);
 }
 .newsletterForm {
@@ -1320,7 +1307,7 @@ figure img {
   margin-top: 1rem;
   color: var(--special-color);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -1331,7 +1318,7 @@ figure img {
   padding-left: 1.5rem;
   text-align: left;
   color: var(--text-color); /* opcional */
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 1rem;
   list-style-type: circle;
   margin-top: 0.5rem;
@@ -1412,27 +1399,27 @@ figure img {
   padding: 1rem;
 }
 .blog-post-content p {
-  font-size: 1.125rem; /* ~18px, ótimo para leitura */
-  line-height: 1.6; /* mais espaçamento entre linhas */
+  font-size: 1.6rem; 
+  line-height: 1.7; 
   color: #f6f6f6;
 }
 
 .blog-post-title-link {
-  font-size: 1.5rem; /* ~24px, ainda destacado mas não exagerado */
+  font-size: 3rem;
   font-weight: 700;
   color: #f6f6f6;
 }
 
 .blog-post-image {
-  width: 120px; /* mais contido */
+  width: 120px; 
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 .post-content {
-  font-size: 1.8rem; /* tamanho base, ajusta conforme quiseres */
-  line-height: 1.7; /* mais espaçamento entre linhas */
-  color: #f6f6f6; /* mantém cor do tema */
+  font-size: 1.8rem; 
+  line-height: 1.7; 
+  color: #f6f6f6; 
   margin-top: 1rem;
 }
 
@@ -1442,10 +1429,10 @@ figure img {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  color: var(--special-color); /* usa a tua variável */
+  color: var(--special-color);
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  line-height: 1.3;
+  line-height: 1.7;
 }
 
 .post-content img {
@@ -1455,10 +1442,10 @@ figure img {
   margin: 1rem 0;
 }
 .post-header {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .blog-post-readmore {
-  margin: 1rem;
+  margin: 1em;
 }
 
 .post-content p {
@@ -1466,12 +1453,12 @@ figure img {
 }
 
 .post-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .post-description {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-style: italic;
 }
 
@@ -1484,11 +1471,11 @@ figure img {
 }
 
 .page-content {
-  font-size: 1rem;
+  font-size: 1.1em;
 }
 
 .container my-5 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 #cookie-consent {
@@ -1500,7 +1487,7 @@ figure img {
   padding: 15px;
   text-align: center;
   z-index: 1000;
-  font-family: Arial, sans-serif;
+  
 }
 
 #cookie-consent button {
@@ -1510,14 +1497,14 @@ figure img {
   background-color: #4caf50;
   color: white;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 3px;
 }
 
 #cookie-consent button:hover {
-  background-color: #45a049;
+  background-color: var(--secondary-color);
 }
 .link-cookies {
-  color: #4caf50;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
