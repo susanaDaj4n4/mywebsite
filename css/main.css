@@ -854,10 +854,10 @@ figure img {
   }
 
   .blog-post-content p {
-    font-size: 1rem; /* ~16px em mobile */
+    font-size: 1.5rem; /* ~16px em mobile */
   }
   .post-content {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
   }
 }
@@ -1430,10 +1430,11 @@ figure img {
   border-radius: 8px;
 }
 .post-content {
-  font-size: 1.2rem; /* tamanho base, ajusta conforme quiseres */
+  font-size: 1.8rem; /* tamanho base, ajusta conforme quiseres */
   line-height: 1.7; /* mais espaçamento entre linhas */
   color: #f6f6f6; /* mantém cor do tema */
   margin-top: 1rem;
+
 }
 
 .post-content h1,
@@ -1457,6 +1458,25 @@ figure img {
 
 .post-content p {
   margin-bottom: 1rem;
+}
+
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.post-description {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.post-featured-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
 #cookie-consent {
