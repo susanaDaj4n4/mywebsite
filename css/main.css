@@ -1434,7 +1434,6 @@ figure img {
   line-height: 1.7; /* mais espaçamento entre linhas */
   color: #f6f6f6; /* mantém cor do tema */
   margin-top: 1rem;
-
 }
 
 .post-content h1,
@@ -1455,11 +1454,16 @@ figure img {
   border-radius: 8px;
   margin: 1rem 0;
 }
+.post-header {
+  font-size: 1.5rem;
+}
+.blog-post-readmore {
+  margin: 1rem;
+}
 
 .post-content p {
   margin-bottom: 1rem;
 }
-
 
 .post-title {
   font-size: 2.5rem;
@@ -1479,6 +1483,9 @@ figure img {
   margin-bottom: 1.5rem;
 }
 
+.page-content {
+  font-size: 1rem;
+}
 #cookie-consent {
   position: fixed;
   bottom: 0;
