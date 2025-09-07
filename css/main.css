@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   color: var(--special-color);
 }
 
@@ -61,15 +61,16 @@ a {
 }
 
 .maxWidth {
-  max-width: 100%; 
+  max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 .container {
+  font-size: 1.6rem;
   margin: 1.5rem;
   max-width: 100%;
   padding-top: 2rem;
-  padding-left: 1rem; 
+  padding-left: 1rem;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -98,14 +99,14 @@ a {
 }
 
 .logo-icon__logo {
-  display: none; 
+  display: none;
   width: 10rem;
-  padding: 1.75rem; 
+  padding: 1.75rem;
 }
 
 .logo-icon__logo img {
-  width: 160%; 
-  height: auto; 
+  width: 160%;
+  height: auto;
   display: block;
 }
 
@@ -155,7 +156,7 @@ a {
 
 .header-nav a {
   display: block;
-  padding: 1rem 1.5rem; 
+  padding: 1rem 1.5rem;
   width: 100%;
   color: var(--special-color);
   text-decoration: none;
@@ -467,7 +468,7 @@ a {
 }
 
 .testimonials_container h2 .title--thin {
-  display: block; 
+  display: block;
   font-weight: 300;
   font-size: 3rem;
   color: var(--special-color);
@@ -822,9 +823,14 @@ figure img {
   }
 
   .blog-post {
+    font-size: 1.6rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .blog-list {
+    font-size: 1.6rem;
   }
 
   .blog-post-image-link {
@@ -838,11 +844,11 @@ figure img {
   }
 
   .blog-post-title-link {
-    font-size: 3rem; /* ~20px em mobile */
+    font-size: 1.6rem; /* ~20px em mobile */
   }
 
   .blog-post-content p {
-    font-size: 1.6rem; /* ~16px em mobile */
+    font-size: 1.6rem;
   }
   .post-content {
     font-size: 1.6rem;
@@ -1115,7 +1121,7 @@ figure img {
 
   /* Ajustes visuais */
   .middleContent article {
-    margin: 0; 
+    margin: 0;
     background: #f9f9f9;
     border-radius: 8px;
     text-align: center;
@@ -1399,8 +1405,8 @@ figure img {
   padding: 1rem;
 }
 .blog-post-content p {
-  font-size: 1.6rem; 
-  line-height: 1.7; 
+  font-size: 1.6rem;
+  line-height: 1.7;
   color: #f6f6f6;
 }
 
@@ -1411,15 +1417,23 @@ figure img {
 }
 
 .blog-post-image {
-  width: 120px; 
+  width: 120px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
+
+.blog-post-meta {
+  font-size: 1.6rem;
+}
+
+.blog-post-description {
+  font-size: 1.6rem;
+}
 .post-content {
-  font-size: 1.8rem; 
-  line-height: 1.7; 
-  color: #f6f6f6; 
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #f6f6f6;
   margin-top: 1rem;
 }
 
@@ -1446,10 +1460,12 @@ figure img {
 }
 .blog-post-readmore {
   margin: 1em;
+  font-size: 1.6rem;
 }
 
 .post-content p {
   margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .post-title {
@@ -1471,11 +1487,19 @@ figure img {
 }
 
 .page-content {
-  font-size: 1.1em;
+  font-size: 1.6rem;
 }
-
+.pagination {
+  font-size: 1.6rem;
+}
+.previous .disabled {
+  font-size: 1.6rem;
+}
 .container my-5 {
-  font-size: 1.5em;
+  font-size: 1.6rem;
+}
+.page current {
+  font-size: 1.6rem;
 }
 
 #cookie-consent {
@@ -1487,7 +1511,6 @@ figure img {
   padding: 15px;
   text-align: center;
   z-index: 1000;
-  
 }
 
 #cookie-consent button {
