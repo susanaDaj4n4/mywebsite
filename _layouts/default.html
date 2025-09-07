@@ -96,35 +96,23 @@
     </div>
 
     <!-- Header -->
-    <header class="header" data-paralax data-p-velocity="0.5">
+    <header class="header-container" data-paralax data-p-velocity="0.5">  
       <div class="container">
-        <div class="logo-icon__logo sm-hide md-show">
-          <img
-            src="/logo_usado/SVG-FILE.svg"
-            class="top_header_logo"
-            alt="DaJoana Logo"
-            width="200"
-          />
+        <!-- Este aparece só em telas médias e grandes -->
+        <div class="logo-icon__logo sm-hide md-show"><img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="200"/></div>
+
+          <nav class="header-nav" role="navigation">               
+            <ul id="header__navList" class="header__navList" aria-hidden="true">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cursos.html" id="linkCursos">Cursos</a></li>
+              <li><a href="#footer__socialLinks">Contactos</a></li>
+              <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-de-receitas-da-avo" target="_blank" rel="noopener noreferrer">Livro da Avó</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="https://www.youtube.com/@dajoanacosmeticanatural/">Vídeos</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header-nav">
-          <ul id="header__navList" class="header__navList" aria-hidden="true">
-            <li><a href="/">Home</a></li>
-            <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/cursos.html">Cursos</a></li>
-            <li><a href="#footer__socialLinks">Contactos</a></li>
-            <li>
-              <a href="https://cosmeticaformacao.gumroad.com/l/livro-da-avo"
-                ><span>livro da avó</span></a
-              >
-            </li>
-            <li><a href="/blog/">Blog</a></li>
-            <li>
-              <a href="https://www.youtube.com/@dajoanacosmeticanatural/"
-                >Vídeos</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
