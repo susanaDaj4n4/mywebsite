@@ -13,7 +13,7 @@
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 main img {
@@ -22,7 +22,7 @@ main img {
   width: 90%;
   max-width: 600px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 html,
@@ -45,19 +45,19 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.3rem;
 }
 a {
   text-decoration: none;
   color: var(--special-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .maxWidth {
@@ -66,7 +66,7 @@ a {
   box-sizing: border-box;
 }
 .container {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 1.5rem;
   max-width: 100%;
   padding-top: 2rem;
@@ -149,7 +149,7 @@ a {
   border-bottom: 1px dotted;
   text-transform: uppercase;
   color: var(--special-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   width: 100%;
 }
@@ -217,34 +217,38 @@ a {
 }
 
 .heroBanner_title {
+  background-color: var(--special-color);
   color: var(--secondary-color);
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  border-radius: 0.75rem;
 }
 
 .heroBanner_subtitle {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: var(--secondary-color);
   line-height: 1.7;
   text-shadow: 0.5px 0.5px 1px rgba(75, 109, 76, 0.3);
   margin-bottom: 1rem;
 }
+.heroBanner_subtitle_background {
+  color: var(--secondary-color);
+  background-color: var(--special-color);
+}
 
 .heroBanner_btn {
   background-color: var(--special-color);
   color: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 0.75rem;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 0.8rem 2rem;
   transition: background-color 0.3s ease;
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
-
   margin-top: 1.5rem;
 }
 
@@ -257,7 +261,7 @@ a {
   background-color: var(--secondary-color);
   margin-top: 1.5rem;
   color: var(--special-color);
-  border-radius: 4px;
+  border-radius: 0.75rem;
   font-size: 1.4rem;
   text-decoration: none;
   padding: 0.8rem 2rem;
@@ -309,20 +313,20 @@ a {
 .middleContent_title {
   color: var(--secondary-color);
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .middleContent span[class^='fa'] {
   color: var(--primary-color);
-  font-size: 3.5em;
+  font-size: 3em;
   margin-bottom: 1rem;
 }
 
 .middleContent_text {
   color: var(--primary-text);
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .row {
@@ -368,14 +372,16 @@ a {
 
 .mainContent_img,
 .mainContent_text {
+  font-size: 1.2rem;
   width: 100%;
   flex: 1 1 100%;
   text-align: center;
 }
-.mainContent_text {
+.mainContent_text p {
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* distribui o espaço entre o texto e o botão */
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -384,7 +390,7 @@ a {
   /* height: 15rem; */
   min-height: 18.75rem;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -397,20 +403,21 @@ a {
   max-height: 100%;
   object-position: center;
   display: block;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .mainContent_title {
+  font-size: 1.5rem;
+  align-self: center;
   margin: 1.5rem;
   color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 3rem;
 }
 
 .mainContent p {
   color: var(--primary-color);
   line-height: 1.7;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .mainContent .row {
@@ -420,7 +427,7 @@ a {
   /* flex: 1 1 calc(25% - 1rem);  */
   box-sizing: border-box;
   /* background-color: white; */
-  border-radius: 12px;
+  border-radius: 0.75rem;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -445,7 +452,7 @@ a {
   background-color: var(--secondary-color);
   padding: 1rem 0;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.75rem;
 }
 
 .testimonials_container {
@@ -459,7 +466,7 @@ a {
 }
 
 .testimonials_container h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   color: var(--special-color);
   margin-bottom: 0.5rem;
@@ -470,7 +477,7 @@ a {
 .testimonials_container h2 .title--thin {
   display: block;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--special-color);
 }
 
@@ -504,7 +511,7 @@ a {
   max-width: 100%; /* evita que fique gigante em ecrãs grandes */
   height: auto;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 /* Firefox */
@@ -552,11 +559,11 @@ figure img {
 }
 
 .last-articles__title h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 900;
-  border-radius: 5px;
+  border-radius: 0.75rem;
 }
 .last-articles container {
   padding: 2rem;
@@ -569,7 +576,7 @@ figure img {
   grid-auto-rows: auto;
   row-gap: 0;
   column-gap: 0;
-  border-radius: 5px;
+  border-radius: 0.75rem;
 }
 
 .last-articles__thumbs img {
@@ -580,7 +587,7 @@ figure img {
 }
 
 .books .h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--primary-text);
 }
 .books,
@@ -601,7 +608,7 @@ figure img {
 }
 
 .books__card__content h3 {
-  font-size: 2.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary-text);
   line-height: 1.7;
@@ -621,7 +628,7 @@ figure img {
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-  border-radius: 6px;
+  border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* opcional: para dar destaque */
 }
 
@@ -630,8 +637,8 @@ figure img {
   color: var(--special-color); /* assume que já tens esta variável */
   border: 1.5px solid var(--primary-color);
   padding: 0.8rem 2rem;
-  border-radius: 4px;
-  font-size: 1.4rem;
+  border-radius: 0.75rem;
+  font-size: 1.6rem;
   /* font-weight: bold; */
   text-decoration: none;
   display: inline-block;
@@ -645,18 +652,17 @@ figure img {
 }
 
 .footer {
-  margin: 1.5rem 1rem;
+  margin: 0;
   background: var(--secondary-color);
   color: var(--special-color);
   text-align: center;
-  /* padding: 2em; */
+  padding: 0;
   /* margin-top: 2em; */
-  border-radius: 5;
+  border-radius: 0.75rem;
 }
 
 .footer_container {
-  margin-top: 3rem;
-  /* margin: 1.5rem; */
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
@@ -664,7 +670,7 @@ figure img {
 }
 
 .footer p {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 .footer a {
   font-size: 1rem;
@@ -673,15 +679,14 @@ figure img {
   /* margin: 1.5rem auto; */
   list-style-type: none;
   display: flex;
-
   justify-content: space-evenly;
   align-self: stretch;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .footer__socialLinks i {
-  font-size: 2rem; /* Ajusta aqui o tamanho desejado */
-  margin: 0 2rem; /* Espaçamento horizontal entre ícones */
+  font-size: 1.6rem;
+  margin: 0 1rem;
 }
 
 .footer__socialLinks i:hover {
@@ -749,7 +754,7 @@ figure img {
 
   .heroBanner_content {
     margin: 1.5rem;
-    border-radius: 5px;
+    border-radius: 0.75rem;
     gap: 1.5rem;
   }
 
@@ -785,14 +790,15 @@ figure img {
     text-align: center;
   }
   .mainContent_title {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .mainContent p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .mainContent_img,
   .mainContent_text {
+    font-size: 1.2rem;
     width: 100%;
     flex: 1 1 100%;
   }
@@ -823,14 +829,14 @@ figure img {
   }
 
   .blog-post {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .blog-list {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .blog-post-image-link {
@@ -844,14 +850,14 @@ figure img {
   }
 
   .blog-post-title-link {
-    font-size: 1.6rem; /* ~20px em mobile */
+    font-size: 1.2rem; /* ~20px em mobile */
   }
 
   .blog-post-content p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .post-content {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
 }
@@ -905,7 +911,7 @@ figure img {
     white-space: nowrap;
   }
   .header-nav a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .header-nav a.actived {
@@ -919,7 +925,7 @@ figure img {
   }
 
   .heroBanner {
-    background-image: url(../image/faça_cosmeticos_DaJoana.jpg);
+    background-image: url(../image/faca_cosmeticos_DaJoana.jpg);
     background-size: cover; /* cobre toda a área, mesmo que corte um pouco */
     background-position: center center; /* centra a imagem */
     background-repeat: no-repeat;
@@ -928,7 +934,7 @@ figure img {
     margin-right: auto;
 
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.75rem;
 
     display: flex;
     flex-direction: column;
@@ -946,13 +952,14 @@ figure img {
     color: var(--primary-text);
     text-decoration: none;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0.75rem;
     font-weight: 600;
     transition: background-color 0.3s ease;
   }
 
   .heroBanner_iconPlay i {
     display: none;
+    font-size: 3rem;
   }
   .row {
     display: flex;
@@ -983,11 +990,6 @@ figure img {
     color: var(--primary-text);
   }
 
-  /* .mainContent {
-    padding: 2em;
-    font-size: 1rem;
-  } */
-
   .mainContent .row {
     display: flex;
     flex-wrap: wrap;
@@ -1013,30 +1015,30 @@ figure img {
   }
 
   .mainContent_img img {
-    max-width: 100%; /* ajusta conforme o layout */
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
-    border-radius: 6px;
+    border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .mainContent_title {
     text-transform: uppercase;
     color: var(--special-color);
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.2em;
   }
 
-  .mainContent p {
-    font-size: 1.6rem;
+  .mainContent_text p {
+    font-size: 1.2rem;
     line-height: 1.7;
-    color: var(--primary-color);
+    color: var(--special-color);
   }
 
   .btnContainer {
-    margin-top: 3rem;
+    margin-top: 1.6rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -1044,7 +1046,7 @@ figure img {
 
   .testimonials__carroussel__shadow-wrapper {
     position: relative;
-    overflow: hidden; /* Impede que as sombras se movam com o scroll */
+    overflow: hidden;
   }
 
   .testimonials__carroussel__wrapper {
@@ -1103,7 +1105,7 @@ figure img {
   }
 
   .heroBanner {
-    background-image: url(../image/faça_cosmeticos_DaJoana.jpg);
+    background-image: url(../image/faca_cosmeticos_DaJoana.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1123,18 +1125,18 @@ figure img {
   .middleContent article {
     margin: 0;
     background: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 0.75rem;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
 
   .middleContent_title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   .middleContent_text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #333;
   }
 
@@ -1153,8 +1155,8 @@ figure img {
   }
 
   .testimonials__carroussel__shadow-wrapper {
-    overflow: auto; /* permite o scroll horizontal */
-    position: relative; /* necessário para posicionar as sombras */
+    overflow: auto;
+    position: relative;
     width: 100%;
   }
 
@@ -1162,8 +1164,8 @@ figure img {
     display: flex;
     width: max-content;
     gap: 2rem;
-    overflow: hidden; /* impede que os slides excedam o container */
-    animation: scrollLoop 55s linear infinite; /* animação contínua */
+    overflow: hidden;
+    animation: scrollLoop 55s linear infinite;
   }
 
   .testimonials__carroussel__wrapper.js-enable figure {
@@ -1192,7 +1194,7 @@ figure img {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--primary-text);
 }
 .newsletterForm {
@@ -1215,13 +1217,16 @@ figure img {
 /* Inputs e botão */
 .newsletterForm input,
 .newsletterForm button {
-  font-size: 1em;
+  font-size: 1.2rem;
   padding: 0.5em 1em;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.75rem;
   transition: background-color 0.3s ease;
 }
 
+.subscricao {
+  margin: 0;
+}
 .newsletterForm input {
   background-color: #9f9f9f;
   flex: 1 1 200px;
@@ -1246,12 +1251,12 @@ figure img {
 
 /* Feedback mensagens */
 .feedback {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   text-shadow: 2px 2px 1px #333;
   max-width: 600px;
   margin: 1em auto;
   padding: 1em;
-  border-radius: 5px;
+  border-radius: 0.75rem;
   text-align: center;
   display: none; /* Escondido por padrão */
 }
@@ -1291,7 +1296,7 @@ figure img {
   max-width: 300px;
   aspect-ratio: 1 / 1; /* cria uma caixa quadrada */
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   flex: 1 1 200px; /* Adicionar para melhor comportamento responsivo dentro do flexbox */
 }
@@ -1301,11 +1306,12 @@ figure img {
   object-fit: cover; /* recorta sem distorcer */
   object-position: center;
   display: block;
-  border-radius: 6px;
+  border-radius: 0.75rem;
 }
 
-.mainContent_text_cursos {
-  flex: 2 1 25rem; /* flex-grow, flex-shrink, flex-basis */
+.mainContent_text_cursos p {
+  font-size: 1.6rem;
+  flex: 2 1 25rem;
 }
 
 /* Título */
@@ -1313,7 +1319,7 @@ figure img {
   margin-top: 1rem;
   color: var(--special-color);
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -1325,7 +1331,7 @@ figure img {
   text-align: left;
   color: var(--text-color); /* opcional */
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 1.6rem;
   list-style-type: circle;
   margin-top: 0.5rem;
 }
@@ -1335,11 +1341,9 @@ figure img {
 
 .mainContent_list__cursos ul li {
   margin-bottom: 0.3rem;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 }
 
-/* Botões */
-/* Nova section para controlar layout */
 .section_btns {
   width: 100%;
   max-width: 1000px;
@@ -1353,14 +1357,14 @@ figure img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem; /* sem espaço entre botões */
+  gap: 2rem;
 }
 
 .heroBanner_btn {
   background-color: var(--secondary-color);
   color: var(--special-color);
   padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.75rem;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s ease;
@@ -1378,7 +1382,7 @@ figure img {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.75rem;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s ease;
@@ -1405,13 +1409,13 @@ figure img {
   padding: 1rem;
 }
 .blog-post-content p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: #f6f6f6;
 }
 
 .blog-post-title-link {
-  font-size: 3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #f6f6f6;
 }
@@ -1420,18 +1424,18 @@ figure img {
   width: 120px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0.75rem;
 }
 
 .blog-post-meta {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .blog-post-description {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .post-content {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: #f6f6f6;
   margin-top: 1rem;
@@ -1452,29 +1456,29 @@ figure img {
 .post-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.75rem;
   margin: 1rem 0;
 }
 .post-header {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .blog-post-readmore {
   margin: 1em;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .post-content p {
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .post-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .post-description {
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-style: italic;
 }
 
@@ -1482,24 +1486,24 @@ figure img {
   width: 100%;
   max-width: 500px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 .page-content {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .pagination {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .previous .disabled {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .container my-5 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .page current {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 #cookie-consent {
@@ -1521,7 +1525,7 @@ figure img {
   color: white;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 3px;
+  border-radius: 0.75rem;
 }
 
 #cookie-consent button:hover {
