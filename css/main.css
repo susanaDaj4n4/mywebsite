@@ -1405,7 +1405,8 @@ figure img {
   border-radius: 8px;
 }
 
-.blog-post-content {
+.blog-post-content p {
+  font-size: 2 rem;
   flex: 1;
   color: #f6f6f6;
 }
