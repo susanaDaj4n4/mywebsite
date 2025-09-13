@@ -1087,6 +1087,17 @@ figure img {
     height: auto;
     display: block;
   }
+
+  .blog-list {
+    margin: 1rem;
+  }
+  .blog-post {
+    margin: 1rem;
+  }
+
+  .post.image {
+    margin: 1rem;
+  }
 }
 
 @media screen and (min-width: 90em) {
