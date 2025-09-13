@@ -70,7 +70,9 @@ p,
 .blog-post-content p {
   font-size: clamp(1.2rem, 1.2vw, 1.125rem);
   line-height: 1.6;
+  color: #f6f6f6;
 }
+
 
 a {
   font-size: clamp(0.75rem, 1.5vw, 1rem); /* links pequenos e legíveis */
@@ -93,9 +95,11 @@ a {
 }
 
 .blog-post-title-link {
-  font-size: clamp(1.5rem, 3.5vw, 2rem); /* títulos de posts */
+  font-size: 1.25rem;
   font-weight: 700;
+  color: #f6f6f6;
 }
+
 
 .heroBanner_title {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -1370,6 +1374,7 @@ figure img {
 .blog-post-image-link {
   margin-right: 0;
   margin-bottom: 1rem;
+  
 }
 
 .blog-post-image {
@@ -1378,19 +1383,10 @@ figure img {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  
 }
 
-.blog-post-title-link {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #f6f6f6;
-}
 
-.blog-post-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #f6f6f6;
-}
 
 /* Botões */
 /* Nova section para controlar layout */
