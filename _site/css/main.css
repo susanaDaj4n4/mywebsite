@@ -1098,6 +1098,9 @@ figure img {
   .post.image {
     margin: 1rem;
   }
+  .blog-post-content{
+    margin: 1rem;
+  }
 }
 
 @media screen and (min-width: 90em) {
