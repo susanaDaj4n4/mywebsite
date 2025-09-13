@@ -73,7 +73,6 @@ p,
   color: #f6f6f6;
 }
 
-
 a {
   font-size: clamp(0.75rem, 1.5vw, 1rem); /* links pequenos e legíveis */
   text-decoration: none;
@@ -99,7 +98,6 @@ a {
   font-weight: 700;
   color: #f6f6f6;
 }
-
 
 .heroBanner_title {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -1102,7 +1100,10 @@ figure img {
   .post.image {
     margin: 1rem;
   }
-  .blog-post-content{
+  .blog-post-content {
+    margin: 1rem;
+  }
+  .post {
     margin: 1rem;
   }
 }
@@ -1374,7 +1375,6 @@ figure img {
 .blog-post-image-link {
   margin-right: 0;
   margin-bottom: 1rem;
-  
 }
 
 .blog-post-image {
@@ -1383,10 +1383,7 @@ figure img {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  
 }
-
-
 
 /* Botões */
 /* Nova section para controlar layout */
@@ -1427,4 +1424,8 @@ figure img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.post {
+  margin: 1rem;
 }
