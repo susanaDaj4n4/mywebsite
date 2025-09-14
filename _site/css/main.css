@@ -1089,6 +1089,19 @@ figure img {
     height: auto;
     display: block;
   }
+  
+  .blog-post-image {
+    width: 150px;
+    max-width: none; /* override */
+  }
+
+  .blog-post-title-link {
+    font-size: 2rem;
+  }
+
+  .blog-post-content p {
+    font-size: 1.125rem; /* ligeiramente maior mas não exagerado */
+  }
 
   .blog-list {
     margin: 1rem;
@@ -1100,9 +1113,7 @@ figure img {
   .post.image {
     margin: 1rem;
   }
-  .blog-post-content {
-    margin: 1rem;
-  }
+  
   .post {
     margin: 1rem;
   }
