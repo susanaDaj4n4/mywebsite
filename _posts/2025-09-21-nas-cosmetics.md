@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'NAS Anti Aging Serum: Análise científica e alternativas naturais'
-date: 2025-09-14
+date: 2025-09-21
 categories: blog
-permalink: /blog/nas-anti-aging-serum-analise/
+permalink: /blog/nas-cosmetics/
 tags:
   - cosmética natural
   - cuidados da pele
@@ -12,7 +12,7 @@ tags:
   - niacinamida
   - alternativas naturais
   - anti-aging
-image: /assets/imagens/nas_serum.jpg
+image: /assets/imagens/nas-cosmetics-analise.jpg
 author: Susana Soares Silva
 description: 'Analisamos o NAS Anti Aging Serum, um dos produtos mais falados no mundo da beleza, e apresentamos alternativas naturais eficazes para o cuidado da pele.'
 meta:
