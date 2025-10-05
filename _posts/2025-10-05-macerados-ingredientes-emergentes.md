@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inovação natural: macerados botânicos e ingredientes sustentáveis emergentes"
-date: 2025-09-05
+date: 2025-10-05
 categories: blog
 image: /assets/imagens/macerado_DaJoana.jpg)
 tags:
