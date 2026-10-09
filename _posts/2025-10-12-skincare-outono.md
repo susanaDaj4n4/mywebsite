@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Ingredientes Outonais da Nossa Flora: Uma Jornada Cosmética de Portugal aos Trópicos"
+title: 'Ingredientes Outonais da Nossa Flora: Uma Jornada Cosmética de Portugal aos Trópicos'
 date: 2024-10-12
 author: Susana Soares Silva
 categories: [cosmética-natural, ingredientes-naturais, sustentabilidade]
 tags: [outono, plantas-portuguesas, óleos-lusófonos, cosmética-consciente]
-image: /images/ingredientes-outonais-lusofonia-2024.jpg
-description: "Descubra os tesouros outonais da cosmética natural lusófona. Do alecrim português ao maracujá angolano, explore ingredientes da época que transformam sua rotina de beleza."
+image: /assets/imagens/pexels-umaykaratas-14595081.jpg
+description: 'Descubra os tesouros outonais da cosmética natural lusófona. Do alecrim português ao maracujá angolano, explore ingredientes da época que transformam sua rotina de beleza.'
 ---
 
 ## 🌿 A Sabedoria das Estações na Cosmética Natural

@@ -1,40 +1,41 @@
-const hamburguerMenu = document.getElementById("hamburguer-menu");
-const menuNav = document.querySelector(".header-nav");
+(() => {
+  const header = document.querySelector('.header-container');
+  const nav = document.getElementById('header-nav');
+  const toggle = document.getElementById('hamburguer-menu');
+  const THRESHOLD = 10; // px de scroll para passar a hamburguer
 
-hamburguerMenu.classList.add("hamburguer-menu-js-enabled");
+  const setOpen = (open) => {
+    nav.classList.toggle('hamburguerMenu-opened', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  };
 
-function closeMenu() {
-  hamburguerMenu.setAttribute("aria-expanded", "false");
-  menuNav.setAttribute("aria-hidden", "true");
-  menuNav.classList.add("hamburguerMenu-closed");
-  menuNav.classList.remove("hamburguerMenu-opened");
-  hamburguerMenu.classList.remove("hamburguer-menu-opened");
-}
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
 
-closeMenu();
+  // Fecha ao clicar numa ligação, fora do cabeçalho, ou com Esc
+  nav.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('click', (e) => { if (!header.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { setOpen(false); toggle.focus(); }
+  });
 
-hamburguerMenu.addEventListener("click", function (event) {
-  event.stopPropagation(); // impede que o clique se propague para o document
+  // Compacta ao fazer scroll
+  let ticking = false;
+  const update = () => {
+    const scrolled = window.scrollY > THRESHOLD;
+    if (scrolled !== header.classList.contains('is-scrolled')) {
+      header.classList.toggle('is-scrolled', scrolled);
+      setOpen(false);
+    }
+    ticking = false;
+  };
 
-  const expanded = this.getAttribute("aria-expanded") === "true";
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
 
-  if (expanded) {
-    closeMenu();
-  } else {
-    this.setAttribute("aria-expanded", "true");
-    menuNav.setAttribute("aria-hidden", "false");
-    menuNav.classList.remove("hamburguerMenu-closed");
-    menuNav.classList.add("hamburguerMenu-opened");
-    hamburguerMenu.classList.add("hamburguer-menu-opened");
-  }
-});
-
-// Fechar ao clicar fora do menu
-document.addEventListener("click", function (event) {
-  if (
-    !hamburguerMenu.contains(event.target) &&
-    !menuNav.contains(event.target)
-  ) {
-    closeMenu();
-  }
-});
+  update();
+})();
