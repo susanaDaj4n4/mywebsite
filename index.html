@@ -72,35 +72,7 @@ layout: null
 
   <body class="fx js">
     
-      <header class="header-container">  
-        <div class="container">
-        
-          <div class="logo-icon__logo">
-            <a href="index.html" aria-label="DaJoana – página inicial">
-              <img src="logo_usado/SVG FILE.svg" class="top_header_logo" alt="DaJoana Logo" width="150" height="40">
-            </a> 
-          </div>
-
-            <nav class="header-nav" id="header-nav" aria-label="Navegação principal">
-              <ul id="header__navList" class="header__navList">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/sobre.html">Sobre</a></li>
-                <li><a href="/cursos.html" id="linkCursos">Cursos</a></li>
-                <li><a href="/index.html#footer__socialLinks">Contactos</a></li>
-                <li><a href="https://cosmeticaformacao.gumroad.com/l/livro-de-receitas-da-avo" target="_blank" rel="noopener noreferrer">Livro da Avó</a></li>
-                <li><a href="/blog/">Blogue</a></li>
-                <li><a href="https://www.youtube.com/@dajoanacosmeticanatural/" target="_blank" rel="noopener noreferrer">Vídeos</a></li>
-              </ul>
-            </nav>
-            <a href="#" id="hamburguer-menu" class="menu-icon"
-              aria-expanded="false" aria-controls="header-nav" aria-label="Abrir menu">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-              </svg>
-            </a>
-          
-        </div>
-      </header>
+      {% include header.html %}
 
     <main>
      
@@ -287,14 +259,10 @@ layout: null
           <h2>Testemunhos <span class="title--thin">dos nossos alunos</span></h2>
           <div class="testimonials__carroussel__shadow-wrapper">
             <div class="testimonials__carroussel__wrapper js-enable">
-              <figure><img src="imagem/testemunhos/Avaliação.png" alt="Depoimento 1"></figure>
-              <figure><img src="imagem/testemunhos/avaliação1.png" alt="Depoimento 2"></figure>
-              <figure><img src="imagem/testemunhos/avaliação2.png" alt="Depoimento 3"></figure>
-              <figure><img src="imagem/testemunhos/avaliação3.png" alt="Depoimento 4"></figure>
-              <figure><img src="imagem/testemunhos/Avaliação.png" alt="Depoimento 1"></figure>
-              <figure><img src="imagem/testemunhos/avaliação1.png" alt="Depoimento 2"></figure>
-              <figure><img src="imagem/testemunhos/avaliação2.png" alt="Depoimento 3"></figure>
-              <figure><img src="imagem/testemunhos/avaliação3.png" alt="Depoimento 4"></figure>
+              <figure><img src="/imagem/testemunhos/Avaliação.png" alt="Depoimento 1"></figure>
+              <figure><img src="/imagem/testemunhos/avaliação1.png" alt="Depoimento 2"></figure>
+              <figure><img src="/imagem/testemunhos/avaliação2.png" alt="Depoimento 3"></figure>
+              <figure><img src="/imagem/testemunhos/avaliação3.png" alt="Depoimento 4"></figure>
             </div>
           </div>
         </div>
@@ -310,7 +278,7 @@ layout: null
               <h3 class="h3">Como transformar a Planta num Cosmético Natural</h3>
               <img src="image/Receitas Naturais com Toque Vintage.png" alt="O livro da Avó"> 
                 <div class="books__card__cta">
-                  <a href="https://cosmeticaformacao.gumroad.com/l/livro-de-receitas-da-avo" class="btn" title="Mais informações sobre o Livro da Avó">Saiba mais</a>
+                  <a href="/livro-da-avo.html" class="btn" title="Mais informações sobre o Livro da Avó">Saiba mais</a>
                 </div>
             </div>
           </article>
@@ -369,8 +337,8 @@ layout: null
     <script src="/js/topo_site.js"></script>
     <script src="/js/hamburguer-menu.js"></script>
     <script src="js/marcacao.js"></script>
-    <script src="/js/paralax.js"></script>
     <script src="/js/testimonials.js"></script>
+    <script src="/js/testimonials-auto.js"></script>    
     
 
 

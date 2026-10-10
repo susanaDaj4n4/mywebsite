@@ -11,6 +11,7 @@
   --default-gap: 1rem;
   --special-color: #f6f6f6;
   --herobanner-text: #aec9e5;
+  --side-gap: 1rem; /* margem lateral igual em todas as secções */
 }
 
 /* ===== Base ===== */
@@ -116,6 +117,7 @@ figure img {
   max-width: 100%;
   padding-top: 2rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   box-sizing: border-box;
 }
 
@@ -394,7 +396,7 @@ main.container {
 .container.heroBanner {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 0;
+  margin: 0 var(--side-gap);
   box-sizing: border-box;
 }
 
@@ -455,8 +457,7 @@ main.container {
 .middleContent {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 var(--side-gap) 1.5rem;
   background-color: #f6f6f6;
   text-align: center;
   padding: 2em;
@@ -473,6 +474,7 @@ main.container {
   text-transform: uppercase;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  overflow-wrap: anywhere;
 }
 .middleContent span[class^='fa'] {
   color: var(--primary-color);
@@ -487,8 +489,7 @@ main.container {
 
 /* ===== MAIN CONTENT (4 artigos escuros) ===== */
 .mainContent {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 var(--side-gap) 1.5rem;
   background-color: var(--secondary-color);
   text-align: center;
   padding: 2em;
@@ -503,6 +504,11 @@ main.container {
   text-align: center;
   transition: box-shadow 0.3s ease;
 }
+.mainContent_article .curso_btn {
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
 .mainContent_article:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -516,6 +522,9 @@ main.container {
 
 .mainContent_title {
   align-self: center;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-align: center;
   margin: 1rem 0;
   font-size: 1.3rem;
   letter-spacing: 0.05em;
@@ -569,7 +578,7 @@ main.container {
 .middleContent .row,
 .mainContent .row {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
 }
 
@@ -586,13 +595,13 @@ main.container {
 
 /* ===== TESTEMUNHOS ===== */
 .testimonials {
-  margin-top: 0.5rem;
+  margin: 0 var(--side-gap) 1.5rem;
   display: flex;
   flex-direction: column;
   gap: var(--default-gap);
   background-color: var(--secondary-color);
   padding: 1rem 0;
-  width: 100%;
+  width: auto;
   border-radius: 0.75rem;
 }
 
@@ -651,6 +660,14 @@ main.container {
   border-radius: 0.5rem;
 }
 
+/* Ecrãs abaixo de 90em: barra de rolagem visível no carrossel */
+@media (max-width: 89.99em) {
+  .testimonials__carroussel__wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(0, 0, 0, 0.25);
+  }
+}
+
 @keyframes scrollLoop {
   0% {
     transform: translateX(0);
@@ -706,7 +723,7 @@ main.container {
 .last-articles {
   text-align: center;
   align-items: center;
-  padding: 0;
+  padding: 0 0 2rem;
 }
 .last-articles__title {
   margin: 2rem;
@@ -735,44 +752,54 @@ main.container {
 
 /* ===== RODAPÉ ===== */
 .footer {
-  margin: 0;
+  margin: 2rem var(--side-gap) 1rem;
+  padding: 2rem 1rem;
   background: var(--secondary-color);
   color: var(--special-color);
   text-align: center;
-  padding: 0;
   border-radius: 0.75rem;
 }
 .footer_container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: var(--default-gap);
+  gap: 1.25rem;
   align-items: center;
+  margin: 0;
 }
-.footer p {
+.footer p,
+.footer h3 {
+  margin: 0;
   font-size: 1rem;
+  line-height: 1.6;
 }
 .footer a {
   font-size: 1rem;
 }
+.footer .heroBanner_btn {
+  margin-top: 0;
+}
 .subscricao {
   margin: 0;
+}
+.social-icons {
+  width: 100%;
 }
 .footer__socialLinks {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
-  align-self: stretch;
-  font-size: 1.6rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 .footer__socialLinks i {
-  font-size: 1.6rem;
-  margin: 0 1rem;
+  font-size: 1.8rem;
+  margin: 0;
 }
 .footer__socialLinks i:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
-  color: var(--special-color);
+  color: var(--primary-color);
 }
 
 /* ===== NEWSLETTER (formulário) ===== */
@@ -1014,21 +1041,35 @@ main.container {
 /* ===== COOKIES ===== */
 #cookie-consent {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  left: var(--side-gap);
+  right: var(--side-gap);
+  bottom: 1rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   background: #222;
   color: #fff;
-  padding: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
   text-align: center;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
   z-index: 1000;
 }
 #cookie-consent button {
-  margin-left: 10px;
-  padding: 5px 10px;
+  margin: 0;
+  padding: 0.4rem 1rem;
   border: none;
   background-color: #4caf50;
   color: white;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
   font-weight: 600;
   border-radius: 0.75rem;
 }
@@ -1036,8 +1077,14 @@ main.container {
   background-color: var(--secondary-color);
 }
 .link-cookies {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: inherit;
   text-decoration: underline;
+}
+
+/* Enquanto o aviso está visível, deixa espaço no fim da página */
+body:has(#cookie-consent:not([style*='none'])) {
+  padding-bottom: 6rem;
 }
 
 /* =====================================================
@@ -1077,8 +1124,7 @@ main.container {
   .middleContent {
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
   .testimonials {
@@ -1179,6 +1225,7 @@ main.container {
 
   /* Hero */
   .container.heroBanner {
+    margin-top: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -1187,8 +1234,7 @@ main.container {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 1.5rem auto 0;
-    width: 100%;
+    width: auto;
     border-radius: 0.75rem;
     justify-content: center;
     min-height: 65vh;
@@ -1309,9 +1355,6 @@ main.container {
   }
 
   /* Grelhas: 4 colunas numa linha */
-  .middleContent {
-    margin: 1rem;
-  }
   .middleContent .row {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2rem;
@@ -1375,4 +1418,136 @@ main.container {
   .header-container * {
     transition: none !important;
   }
+}
+
+/* ===== PÁGINA DO LIVRO ===== */
+.book-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 0 var(--side-gap) 1.5rem;
+  padding: 1rem 0;
+}
+
+.book-hero__cover img {
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+
+.book-hero__text {
+  background: var(--special-color);
+  color: var(--secondary-color);
+  padding: 2rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.book-hero__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.book-hero__text h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.book-hero__text h2 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.book-hero__text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.book-hero__text p:not(.book-hero__eyebrow) {
+  margin: 0 0 1rem;
+}
+
+.book-buy {
+  margin: 0 var(--side-gap) 1.5rem;
+  padding: 2rem 1rem;
+  background: var(--special-color);
+  color: var(--secondary-color);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.book-buy h2 {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.book-buy p {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+}
+
+.book-buy a {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.book-buy__embed {
+  max-width: 56rem;
+  margin: 0 auto 1rem;
+}
+
+@media (min-width: 64em) {
+  .book-hero {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .book-hero__text {
+    padding: 2.5rem;
+    text-align: left;
+  }
+}
+/* ===== Páginas de cursos ===== */
+.heroBanner_subtitle_background {
+  margin: 1rem 0 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+}
+
+/* Duas colunas fixas (só 2 artigos), mesmo em ecrã muito largo */
+@media (min-width: 64em) {
+  .mainContent .row.row--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Listas de aulas */
+.mainContent_list__cursos {
+  font-size: 1.2rem;
+}
+.mainContent_list__cursos ul {
+  padding-left: 1.5rem;
+  margin-top: 0.3rem;
+  list-style-type: disc;
+}
+.mainContent_list__cursos ul li {
+  font-size: 1.1rem;
+}
+
+/* Preço (não é um botão) */
+.price-tag {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--special-color);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

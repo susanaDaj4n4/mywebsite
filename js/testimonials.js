@@ -1,49 +1,86 @@
-document.body.classList.replace("no-js", "js");
+document.body.classList.replace('no-js', 'js')
 
 function setupTestimonials(config) {
-  const wrapper = document.querySelector(config.wrapper);
-  if (!wrapper) return;
+  const wrapper = document.querySelector(config.wrapper)
+  if (!wrapper) return
 
-  const items = wrapper.querySelectorAll(config.items);
-  if (items.length === 0) return;
+  const originals = Array.from(wrapper.querySelectorAll(config.items))
+  if (originals.length === 0) return
 
-  if (!window.matchMedia("screen and (min-width: 90rem)").matches) return;
+  const large = window.matchMedia('(min-width: 90em)')
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-  wrapper.classList.add("js-enable");
+  const SPEED = 60 // px por segundo (ecrã grande)
+  const DELAY = 4000 // ms entre testemunhos (ecrã pequeno)
 
-  const slideWidth = 740; // largura do slide em px (ex: 46.25rem = 740px)
-  const gap = 32; // gap entre os slides em px (ex: 2rem = 32px)
-  const totalSlides = items.length;
+  let clones = []
+  let looping = false
+  let paused = false
 
-  const totalDistance = (slideWidth + gap) * totalSlides;
+  // ----- Ecrã grande: carrossel contínuo -----
+  function enableLoop() {
+    if (looping) return
+    looping = true
+    wrapper.classList.add('js-enable')
 
-  // Define variáveis CSS dinamicamente
-  wrapper.style.setProperty("--qtd", totalSlides);
-  wrapper.style.setProperty("--slide-distance", `${totalDistance}px`);
+    clones = originals.map((item) => {
+      const clone = item.cloneNode(true)
+      clone.setAttribute('aria-hidden', 'true')
+      wrapper.appendChild(clone)
+      return clone
+    })
 
-  items.forEach((item) => {
-    const clone = item.cloneNode(true);
-    wrapper.appendChild(clone);
-  });
+    // Distância real = onde começa o primeiro clone
+    const distance = clones[0].offsetLeft - originals[0].offsetLeft
+    wrapper.style.setProperty('--qtd', originals.length)
+    wrapper.style.setProperty('--slide-distance', `${distance}px`)
+    wrapper.style.animationDuration = `${distance / SPEED}s`
+  }
+
+  function disableLoop() {
+    if (!looping) return
+    looping = false
+    clones.forEach((clone) => clone.remove())
+    clones = []
+    wrapper.classList.remove('js-enable')
+    wrapper.style.removeProperty('--qtd')
+    wrapper.style.removeProperty('--slide-distance')
+    wrapper.style.removeProperty('animation-duration')
+  }
+
+  function update() {
+    if (large.matches) enableLoop()
+    else disableLoop()
+  }
+
+  large.addEventListener('change', update)
+  update()
+
+  // ----- Ecrã pequeno: avança sozinho -----
+  function next() {
+    if (paused || large.matches || reduceMotion.matches) return
+    const figure = wrapper.querySelector('figure')
+    if (!figure) return
+    const step = figure.getBoundingClientRect().width
+    const max = wrapper.scrollWidth - wrapper.clientWidth
+    if (wrapper.scrollLeft >= max - 5) {
+      wrapper.scrollTo({ left: 0, behavior: 'smooth' })
+    } else {
+      wrapper.scrollBy({ left: step, behavior: 'smooth' })
+    }
+  }
+
+  ;['pointerdown', 'touchstart', 'mouseenter', 'focusin'].forEach((e) =>
+    wrapper.addEventListener(e, () => (paused = true), { passive: true }),
+  )
+  ;['pointerup', 'touchend', 'mouseleave', 'focusout'].forEach((e) =>
+    wrapper.addEventListener(e, () => (paused = false), { passive: true }),
+  )
+
+  setInterval(next, DELAY)
 }
 
 setupTestimonials({
-  wrapper: ".testimonials__carroussel__wrapper",
-  items: "figure",
-});
-
-// document
-//   .querySelector(".testimonials__carroussel__wrapper")
-//   ?.classList.add("js-enable");
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   document
-//     .querySelector(".testimonials__carroussel__wrapper")
-//     ?.classList.add("js-enable");
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const wrapper = document.querySelector(".testimonials__carroussel__wrapper");
-//   if (wrapper) {
-//     wrapper.classList.add("js-enable");
-//   }
-// });
+  wrapper: '.testimonials__carroussel__wrapper',
+  items: 'figure',
+})

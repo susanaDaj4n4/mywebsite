@@ -46,3 +46,10 @@ defaults:
       layout: 'post'
       author: 'Susana Soares da Silva'
       lang: 'pt-PT'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - 'imagem/VECTOR SVG PDF JPEG'
