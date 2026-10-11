@@ -1551,3 +1551,46 @@ body:has(#cookie-consent:not([style*='none'])) {
   font-size: 1.2rem;
   font-weight: bold;
 }
+/* ===== Sem deslizar para os lados no telemóvel ===== */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* navegadores antigos */
+  overflow-x: clip; /* navegadores atuais: corta sem criar barra */
+}
+
+/* Cabeçalho: o logótipo não pode empurrar o hamburguer para fora do ecrã */
+.header-container {
+  max-width: 100vw;
+}
+.header-container .container,
+.header-container .logo-icon__logo {
+  min-width: 0;
+}
+.header-container .logo-icon__logo img {
+  height: clamp(2.75rem, 13vw, 4rem);
+  max-width: 62vw;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Ícone do hero: tinha largura de 1600px (10em com fonte de 10rem) */
+.heroBanner_iconPlay {
+  width: auto;
+  max-width: 100%;
+  font-size: clamp(5rem, 28vw, 10rem);
+}
+
+/* Títulos compridos não podem alargar a página */
+.heroBanner_title {
+  max-width: 100%;
+  font-size: clamp(1.7rem, 7vw, 2.5rem);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+main h1,
+main h2,
+main h3 {
+  overflow-wrap: break-word;
+}
