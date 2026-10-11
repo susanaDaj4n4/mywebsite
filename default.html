@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
@@ -67,59 +67,10 @@
       </a>
     </div>
 
-    <header class="header" data-paralax data-p-velocity="0.5">
-      <div class="container">
-        <!-- Logo desktop -->
-        <div class="logo-icon__logo sm-hide md-show">
-          <img
-            src="/logo_usado/SVG FILE.svg"
-            class="top_header_logo"
-            alt="DaJoana Logo"
-            width="200"
-          />
-        </div>
-
-        <nav class="header-nav" role="navigation">
-          <ul id="header__navList" class="header__navList" aria-hidden="true">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/cursos.html" id="linkCursos">Cursos</a></li>
-            <li><a href="#footer__socialLinks">Contactos</a></li>
-            <li>
-              <a
-                href="https://cosmeticaformacao.gumroad.com/l/livro-de-receitas-da-avo"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Livro da Avó</a
-              >
-            </li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="https://www.youtube.com/@dajoanacosmeticanatural/">Vídeos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    {% include header.html %}
 
     <main class="container my-5">{{ content }}</main>
 
-    <footer id="footer__socialLinks" class="footer" >
-        <div class="footer_container">
-          <p>&copy; 2025 DaJoana Cosmética Natural <br> Susana Silva</p>
-          <h3><a href="https://mailchi.mp/440da78f87dc/newsletter">Newsletter</a></h3>
-          <p>
-            <a href="https://ec.europa.eu/consumers/odr">Resolução de Litígios</a> | 
-            <a href="/politica-privacidade.html">Política de Privacidade</a> | 
-            <a href="/cookies.html">Política de Cookies</a></p>
-              <div class="social-icons">
-                <ul class="footer__socialLinks">
-                  <li><a href="https://www.instagram.com/dajoana_cosmeticaformacao/"><i class="fa-brands fa-square-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/@dajoanacosmeticanatural"><i class="fa-brands fa-youtube"></i></a></li>
-                  <li><a href="https://www.tiktok.com/@dajoana_cosmetica"><i class="fa-brands fa-tiktok"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/dajoanacosmetica"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-          </p>
-        </div>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>

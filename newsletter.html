@@ -1,0 +1,141 @@
+---
+layout: null
+permalink: /newsletter.html
+---
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Newsletter | DaJoana Cosmética Natural</title>
+
+    <link rel="icon" href="/logo_usado/favicon-32x32.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <meta
+      name="description"
+      content="Receba dicas naturais e conteúdos exclusivos: receitas de cosméticos, segredos de beleza e novidades sobre cursos e workshops da DaJoana."
+    />
+    <meta name="author" content="Susana Soares Silva" />
+    <link rel="canonical" href="https://www.dajoana.com/newsletter.html" />
+
+    <meta
+      property="og:title"
+      content="Newsletter | DaJoana Cosmética Natural"
+    />
+    <meta
+      property="og:description"
+      content="Receitas de cosméticos, segredos de beleza e novidades sobre cursos e workshops."
+    />
+    <meta
+      property="og:image"
+      content="https://www.dajoana.com/imagem/social-share.jpg"
+    />
+    <meta property="og:url" content="https://www.dajoana.com/newsletter.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body class="fx js">
+    {% include header.html %}
+
+    <main>
+      <section class="newsletter-card">
+        <i
+          class="fa-regular fa-envelope newsletter-card__icon"
+          aria-hidden="true"
+        ></i>
+        <h1>Receba dicas naturais e conteúdos exclusivos!</h1>
+        <p class="newsletter-card__intro">
+          Junte-se à comunidade e receba no seu email receitas de cosméticos,
+          segredos de beleza e novidades sobre os nossos cursos e workshops.
+        </p>
+
+        <form
+          action="https://dajoana.us5.list-manage.com/subscribe/post?u=764055e0009a0a84b3634b8ed&amp;id=9fb409e0aa&amp;f_id=0036bfedf0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          target="_blank"
+        >
+          <div class="newsletter-field">
+            <label for="mce-EMAIL"
+              >Email <span aria-hidden="true">*</span></label
+            >
+            <input
+              type="email"
+              name="EMAIL"
+              id="mce-EMAIL"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="newsletter-field">
+            <label for="mce-FNAME">Nome</label>
+            <input
+              type="text"
+              name="FNAME"
+              id="mce-FNAME"
+              autocomplete="given-name"
+            />
+          </div>
+
+          <div class="newsletter-field">
+            <label for="mce-APELIDO">Apelido</label>
+            <input
+              type="text"
+              name="APELIDO"
+              id="mce-APELIDO"
+              autocomplete="family-name"
+            />
+          </div>
+
+          <div class="newsletter-consent">
+            <input type="checkbox" id="consent" required />
+            <label for="consent">
+              Aceito receber emails da DaJoana e li a
+              <a href="/politica-privacidade.html">Política de Privacidade</a>.
+            </label>
+          </div>
+
+          <input type="hidden" name="tags" value="4554853" />
+
+          <div class="newsletter-hp" aria-hidden="true">
+            <input
+              type="text"
+              name="b_764055e0009a0a84b3634b8ed_9fb409e0aa"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+
+          <button type="submit" class="btn">Subscrever</button>
+        </form>
+
+        <p class="newsletter-card__small">
+          Pode cancelar a subscrição a qualquer momento.
+        </p>
+      </section>
+    </main>
+
+    {% include footer.html %}
+
+    <script src="/js/hamburguer-menu.js"></script>
+  </body>
+</html>
